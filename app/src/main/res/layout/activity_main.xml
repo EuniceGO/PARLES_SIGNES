@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/main"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:gravity="center_horizontal"
+android:background="@drawable/parles_signes_fondo"
+android:padding="16dp">
+
+<!-- Fondo con ilustraciones -->
+<FrameLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center_horizontal"
-    android:background="@drawable/parles_signes_fondo"
-    android:padding="16dp">
+    android:layout_height="481dp"
+    android:layout_weight="0">
 
-    <!-- Fondo con ilustraciones -->
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="481dp"
-        android:layout_weight="0">
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="159dp"
+        android:layout_height="192dp"
+        android:layout_gravity="start|top"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:rotation="-15"
+        android:src="@drawable/sena5" />
 
-        <ImageView
-            android:id="@+id/image1"
-            android:layout_width="159dp"
-            android:layout_height="192dp"
-            android:layout_gravity="start|top"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:rotation="-15"
-            android:src="@drawable/sena5" />
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="155dp"
+        android:layout_height="188dp"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:rotation="15"
+        android:src="@drawable/sena_1" />
 
-        <ImageView
-            android:id="@+id/image2"
-            android:layout_width="155dp"
-            android:layout_height="188dp"
-            android:layout_gravity="end|top"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="10dp"
-            android:rotation="15"
-            android:src="@drawable/sena_1" />
+    <ImageView
+        android:id="@+id/image3"
+        android:layout_width="132dp"
+        android:layout_height="156dp"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="250dp"
+        android:layout_marginEnd="210dp"
+        android:rotation="10"
+        android:src="@drawable/sena4" />
+</FrameLayout>
 
-        <ImageView
-            android:id="@+id/image3"
-            android:layout_width="132dp"
-            android:layout_height="156dp"
-            android:layout_gravity="end|top"
-            android:layout_marginTop="250dp"
-            android:layout_marginEnd="210dp"
-            android:rotation="10"
-            android:src="@drawable/sena4" />
-    </FrameLayout>
-
-    <!-- Sección de texto y botón -->
+<!-- Sección de texto y botón -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:text="PARLES + SIGNES"
+            android:text="@string/nombre_app"
             android:textColor="#000000"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:gravity="center"
-            android:text="Una aplicación diseñada para facilitar la comunicación inclusiva entre personas oyentes y personas sordas o con dificultades del habla."
+            android:text="@string/descripcion_app"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="14sp" />
@@ -85,11 +85,14 @@
             android:drawablePadding="30dp"
             android:gravity="center"
             android:paddingHorizontal="60dp"
-            android:text="Iniciar"
+            android:text="@string/boton_iniciar"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginTop="30dp"/>
+
     </LinearLayout>
 
+
 </LinearLayout>
+
