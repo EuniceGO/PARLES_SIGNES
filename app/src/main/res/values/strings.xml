@@ -3,5 +3,6 @@
     <string name="descripcion_app">Una aplicación diseñada para facilitar la comunicación inclusiva entre personas oyentes y personas sordas o con dificultades del habla.</string>
     <string name="boton_iniciar">Iniciar</string>
     <string name="nombre_app">PARLES + SIGNES</string>
+    <string name="inicio_sesion_registro">Iniciar Sesión</string>
     <string name="Error_traductor">El reconocimiento de voz no está disponible.</string>
 </resources>
