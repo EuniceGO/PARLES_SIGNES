@@ -27,7 +27,7 @@
             android:name=".TraduccionActivity">
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".Registro" />
+        <activity android:name=".RegistroActivity" />
     </application>
 
 </manifest>
