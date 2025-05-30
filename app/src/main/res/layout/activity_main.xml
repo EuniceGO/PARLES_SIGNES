@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,19 +24,28 @@
             android:layout_gravity="start|top"
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
-
-            android:src="@drawable/sena1" />
+            android:rotation="-15"
+            android:src="@drawable/sena5" />
 
         <ImageView
             android:id="@+id/image2"
-            android:layout_width="179dp"
-            android:layout_height="213dp"
+            android:layout_width="157dp"
+            android:layout_height="193dp"
             android:layout_gravity="end|top"
             android:layout_marginTop="140dp"
             android:layout_marginEnd="10dp"
             android:rotation="15"
-            android:src="@drawable/sena2" />
+            android:src="@drawable/sena_1" />
 
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="136dp"
+            android:layout_height="167dp"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="240dp"
+            android:layout_marginEnd="210dp"
+            android:rotation="10"
+            android:src="@drawable/sena4" />
 
 
     </FrameLayout>
@@ -47,13 +57,15 @@
         android:id="@+id/mainText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:text="PARLES + SIGNES"
         android:textStyle="bold"
         android:textSize="18sp"
         android:textColor="#000000" />
 
     <!-- Texto secundario -->
+
+    <!-- Botón inferior -->
     <TextView
         android:id="@+id/subText"
         android:layout_width="229dp"
@@ -65,12 +77,20 @@
         android:textColor="#000000"
         android:textSize="14sp" />
 
-    <!-- Botón inferior -->
     <Button
         android:id="@+id/startButton"
         android:layout_width="220dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
-        android:text="" />
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#4A4ACB"
+        android:text="Iniciar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/cerebro"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="20dp"
+        android:gravity="center_vertical|center_horizontal" />
+
 
 </LinearLayout>
