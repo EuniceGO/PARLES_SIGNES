@@ -1,5 +1,7 @@
 package sv.edu.catolica.parlessignes;
 
+import static sv.edu.catolica.parlessignes.R.*;
+
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
