@@ -22,7 +22,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void Registrarse(View view) {
-        Intent intent = new Intent(this, Registro.class);
+        Intent intent = new Intent(this, RegistroActivity.class);
         startActivity(intent);
     }
 }

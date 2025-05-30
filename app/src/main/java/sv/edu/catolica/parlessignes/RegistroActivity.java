@@ -2,13 +2,14 @@ package sv.edu.catolica.parlessignes;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Registro extends AppCompatActivity {
+public class RegistroActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +21,7 @@ public class Registro extends AppCompatActivity {
         });
     }
 
-    public void Registrarse(View view) {
+    public void Login(View view) {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
