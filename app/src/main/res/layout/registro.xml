@@ -52,7 +52,8 @@
         app:srcCompat="@drawable/vista"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="Login"/>
 
     <EditText
         android:id="@+id/editTextTextEmailAddress2"
