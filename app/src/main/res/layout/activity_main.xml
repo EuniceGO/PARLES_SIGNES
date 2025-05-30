@@ -1,98 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-android:id="@+id/main"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:gravity="center_horizontal"
-android:background="@drawable/parles_signes_fondo"
-android:padding="16dp">
-
-<!-- Fondo con ilustraciones -->
-<FrameLayout
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="481dp"
-    android:layout_weight="0">
+    android:layout_height="match_parent"
+    android:background="@drawable/parles_signes_fondo"
 
+    android:padding="16dp">
+
+    <!-- Imagen 1 -->
     <ImageView
         android:id="@+id/image1"
-        android:layout_width="159dp"
-        android:layout_height="192dp"
-        android:layout_gravity="start|top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
         android:rotation="-15"
-        android:src="@drawable/sena5" />
+        android:src="@drawable/sena5"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintDimensionRatio="159:192" />
 
+    <!-- Imagen 2 -->
     <ImageView
         android:id="@+id/image2"
-        android:layout_width="155dp"
-        android:layout_height="188dp"
-        android:layout_gravity="end|top"
-        android:layout_marginTop="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="10dp"
+        android:layout_marginTop="100dp"
         android:rotation="15"
-        android:src="@drawable/sena_1" />
+        android:src="@drawable/sena_1"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.38"
+        app:layout_constraintDimensionRatio="155:188" />
 
+    <!-- Imagen 3 -->
     <ImageView
         android:id="@+id/image3"
-        android:layout_width="132dp"
-        android:layout_height="156dp"
-        android:layout_gravity="end|top"
-        android:layout_marginTop="250dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="210dp"
+        android:layout_marginTop="250dp"
         android:rotation="10"
-        android:src="@drawable/sena4" />
-</FrameLayout>
+        android:src="@drawable/sena4"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.35"
+        app:layout_constraintDimensionRatio="132:156" />
 
-<!-- Sección de texto y botón -->
-    <LinearLayout
+    <!-- Texto principal -->
+
+    <!-- Descripción -->
+
+    <!-- Botón -->
+
+    <TextView
+        android:id="@+id/mainText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:paddingHorizontal="16dp">
+        android:layout_marginTop="120dp"
+        android:text="@string/nombre_app"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image3" />
 
-        <TextView
-            android:id="@+id/mainText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:text="@string/nombre_app"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/subText"
+        android:layout_width="277dp"
+        android:layout_height="93dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:text="@string/descripcion_app"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainText" />
 
-        <TextView
-            android:id="@+id/subText"
-            android:layout_width="267dp"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:text="@string/descripcion_app"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="14sp" />
-
-        <Button
-            android:id="@+id/startButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#4A4ACB"
-            android:drawableEnd="@drawable/cerebro"
-            android:drawablePadding="30dp"
-            android:gravity="center"
-            android:paddingHorizontal="60dp"
-            android:text="@string/boton_iniciar"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginTop="30dp"/>
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#4A4ACB"
+        android:drawableEnd="@drawable/cerebro"
+        android:drawablePadding="30dp"
+        android:paddingHorizontal="60dp"
+        android:text="@string/boton_iniciar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subText" />
 
 
-</LinearLayout>
-
+</androidx.constraintlayout.widget.ConstraintLayout>
