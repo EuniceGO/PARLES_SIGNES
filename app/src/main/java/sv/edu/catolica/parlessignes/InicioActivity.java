@@ -1,6 +1,9 @@
 package sv.edu.catolica.parlessignes;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,4 +24,11 @@ public class InicioActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    public void Ver_niveles(View view) {
+
+        Intent intent = new Intent(this, NivelesActivity.class);
+        startActivity(intent);
+    }
+
 }

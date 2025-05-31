@@ -18,7 +18,7 @@
         android:layout_height="165dp"
         android:layout_marginTop="8dp"
         android:contentDescription="@string/txt_bienvenido"
-        android:src="@drawable/moustrito"
+        android:src="@drawable/mounstruito"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.958"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,8 +109,8 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/moustrito"
-                    android:layout_marginBottom="8dp" />
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/mounstruito2" />
 
                 <Button
                     android:id="@+id/btnLecciones"
@@ -201,7 +201,8 @@
             <ImageView
                 android:layout_width="34dp"
                 android:layout_height="34dp"
-                android:src="@drawable/proximo" />
+                android:src="@drawable/proximo"
+                android:onClick="Ver_niveles"/>
         </LinearLayout>
 
         <!-- Sección 3 -->
