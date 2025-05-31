@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "243210730684",
+    "project_id": "parlessi",
+    "storage_bucket": "parlessi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243210730684:android:1cd9006e8590c1360764b9",
+        "android_client_info": {
+          "package_name": "sv.edu.catolica.parlessignes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_WkliHLZuithk5XFHDk0Pek4sWspmXfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

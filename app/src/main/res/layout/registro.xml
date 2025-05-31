@@ -26,7 +26,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/startButton"
+        android:id="@+id/btn_regis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="596dp"
@@ -55,7 +55,7 @@
         android:onClick="Login"/>
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/correo_user"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -75,12 +75,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Correo:"
-        app:layout_constraintBottom_toTopOf="@id/editTextTextEmailAddress2"
-        app:layout_constraintStart_toStartOf="@id/editTextTextEmailAddress2"
+        app:layout_constraintBottom_toTopOf="@id/correo_user"
+        app:layout_constraintStart_toStartOf="@id/correo_user"
         android:layout_marginBottom="4dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/contra_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -92,7 +92,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress2" />
+        app:layout_constraintTop_toBottomOf="@id/correo_user" />
 
 
     <TextView
@@ -100,12 +100,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nombre:"
-        app:layout_constraintBottom_toTopOf="@id/editTextText"
-        app:layout_constraintStart_toStartOf="@id/editTextText"
+        app:layout_constraintBottom_toTopOf="@id/nombre_user"
+        app:layout_constraintStart_toStartOf="@id/nombre_user"
         android:layout_marginBottom="4dp" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/nombre_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="344dp"
@@ -126,8 +126,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contraseña:"
-        app:layout_constraintBottom_toTopOf="@id/editTextTextPassword"
-        app:layout_constraintStart_toStartOf="@id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@id/contra_user"
+        app:layout_constraintStart_toStartOf="@id/contra_user"
         android:layout_marginBottom="4dp" />
 
 
