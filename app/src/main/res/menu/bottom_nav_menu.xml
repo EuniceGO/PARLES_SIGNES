@@ -3,17 +3,19 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/casa"
-        android:title="Inicio" />
+        android:title="@string/menu_inicio" />
     <item
         android:id="@+id/nav_library"
         android:icon="@drawable/libro"
-        android:title="Material" />
+        android:title="@string/menu_material" />
     <item
         android:id="@+id/nav_voice"
         android:icon="@drawable/micro"
-        android:title="Traductor" />
+        android:title="@string/menu_traductor"
+        android:onClick="vistaTraductor"/>
     <item
         android:id="@+id/nav_user"
         android:icon="@drawable/usuario"
-        android:title="Perfil" />
+        android:title="@string/menu_perfil"
+        />
 </menu>

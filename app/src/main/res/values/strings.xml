@@ -15,4 +15,8 @@
     <string name="txt_categorias">Categorias</string>
     <string name="txt_niveles">Niveles</string>
     <string name="todo">TODO</string>
+    <string name="menu_perfil">Perfil</string>
+    <string name="menu_traductor">Traductor</string>
+    <string name="menu_material">Material</string>
+    <string name="menu_inicio">Inicio</string>
 </resources>

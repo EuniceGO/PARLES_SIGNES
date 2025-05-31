@@ -2,6 +2,7 @@ package sv.edu.catolica.parlessignes;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -23,7 +24,11 @@ public class InicioActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
     }
+
+
 
     public void Ver_niveles(View view) {
 
@@ -31,4 +36,8 @@ public class InicioActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void vistaTraductor(MenuItem item) {
+        Intent intent = new Intent(this, TraduccionActivity.class);
+        startActivity(intent);
+    }
 }
