@@ -51,6 +51,9 @@
         <activity
             android:name=".NivelesActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".PerfilActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
