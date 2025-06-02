@@ -15,6 +15,15 @@
         android:theme="@style/Theme.PARLESSIGNES"
         tools:targetApi="31">
         <activity
+            android:name=".Nivel_completado"
+            android:exported="false" />
+        <activity
+            android:name=".Traduccion_escrita"
+            android:exported="false" />
+        <activity
+            android:name=".Zona_Aprendizaje"
+            android:exported="false" />
+        <activity
             android:name=".CategoriasActivity"
             android:exported="false" />
         <activity
