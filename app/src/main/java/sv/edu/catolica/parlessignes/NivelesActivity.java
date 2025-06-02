@@ -1,16 +1,11 @@
 package sv.edu.catolica.parlessignes;
 
-import android.content.Intent;
-import android.view.View;
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
-import android.os.Bundle;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class NivelesActivity extends AppCompatActivity {
