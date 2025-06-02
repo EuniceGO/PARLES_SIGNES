@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
 
     <application
         android:allowBackup="true"
@@ -18,6 +23,9 @@
             android:name=".Nivel_completado"
             android:exported="false" />
         <activity
+            android:name=".Documentos"
+            android:exported="false" />
+        <activity
             android:name=".Traduccion_escrita"
             android:exported="false" />
         <activity
@@ -26,6 +34,7 @@
         <activity
             android:name=".CategoriasActivity"
             android:exported="false" />
+        <activity android:name=".DocumentoWebView" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
