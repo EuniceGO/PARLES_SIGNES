@@ -10,11 +10,12 @@
 
     <Button
         android:id="@+id/btnCerrar"
-        android:layout_width="26dp"
-        android:layout_height="25dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/icon_cerrar"
+        android:contentDescription="@string/btn_text_check"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -73,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="@string/seccion_frase"
+                android:text="@string/txt_seccion_frase"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_marginEnd="90dp"/>

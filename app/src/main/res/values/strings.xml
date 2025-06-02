@@ -1,24 +1,30 @@
 <resources>
     <string name="app_name">PARLES+SIGNES</string>
+
     <string name="descripcion_app">Una aplicación diseñada para facilitar la comunicación inclusiva entre personas oyentes y personas sordas o con dificultades del habla.</string>
-    <string name="boton_iniciar">Iniciar</string>
-    <string name="nombre_app">PARLES + SIGNES</string>
+    <string name="parrafo_bienvenida">A una herramienta que te ayudará a comunicarte con los no oyente</string>
     <string name="inicio_sesion_registro">Iniciar Sesión</string>
     <string name="Error_traductor">El reconocimiento de voz no está disponible.</string>
-    <string name="txt_bienvenido">Bienvenido</string>
-    <string name="parrafo_bienvenida">A una herramienta que te ayudará a comunicarte con los no oyente</string>
-    <string name="txt_nosotros">Aprende de una manera divertida y fácil el lenguaje de señas</string>
+
+    <string name="boton_iniciar">Iniciar</string>
     <string name="btn_nosotros">Sobre nosotros</string>
     <string name="btn_lecciones">Lecciones</string>
+    <string name="btn_text_check">Check</string>
+
+    <string name="txt_seccion_frase">Type Something</string>
+    <string name="txt_bienvenido">Bienvenido</string>
+    <string name="txt_nosotros">Aprende de una manera divertida y fácil el lenguaje de señas</string>
     <string name="txt_secciones">Secciones</string>
     <string name="txt_material">Material de apoyo</string>
     <string name="txt_categorias">Categorias</string>
     <string name="txt_niveles">Niveles</string>
-    <string name="todo">TODO</string>
+    <string name="txt_traductor">Traductor</string>
+    <string name="txt_contrasena">Contraseña:</string>
+    <string name="txt_nombre">Nombre:</string>
+    <string name="txt_correo">Correo:</string>
+
     <string name="menu_perfil">Perfil</string>
     <string name="menu_traductor">Traductor</string>
     <string name="menu_material">Material</string>
     <string name="menu_inicio">Inicio</string>
-    <string name="seccion_frase">Type something</string>
-    <string name="btn_text_check">Check</string>
 </resources>

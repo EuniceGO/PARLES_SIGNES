@@ -129,7 +129,7 @@
         app:layout_constraintTop_toBottomOf="@id/textView7" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationPerfil"
+        android:id="@+id/bottomNavigationPerfil2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="#563ec8"

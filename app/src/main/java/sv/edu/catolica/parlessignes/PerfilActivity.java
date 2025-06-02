@@ -1,7 +1,10 @@
 package sv.edu.catolica.parlessignes;
 
+import static sv.edu.catolica.parlessignes.R.id.bottomNavigationPerfil2;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +12,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class PerfilActivity extends AppCompatActivity {
@@ -22,5 +26,26 @@ public class PerfilActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+
+
+    }
+
+
+    public void vistaTraductor(MenuItem item) {
+        startActivity(new Intent(this, TraduccionActivity.class));
+    }
+
+
+    public void vistaMaterial(MenuItem item) {
+        startActivity(new Intent(this, PerfilActivity.class));
+    }
+
+    public void vistaUsuario(MenuItem item) {
+        startActivity(new Intent(this, PerfilActivity.class));
+    }
+
+    public void vistaInicio(MenuItem item) {
+        startActivity(new Intent(this, InicioActivity.class));
     }
 }

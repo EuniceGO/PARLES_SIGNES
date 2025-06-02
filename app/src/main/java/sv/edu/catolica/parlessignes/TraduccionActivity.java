@@ -3,6 +3,7 @@ package sv.edu.catolica.parlessignes;
 import android.content.Intent;
 import android.os.Bundle;
 import android.speech.RecognizerIntent;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -12,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
@@ -30,6 +33,23 @@ public class TraduccionActivity extends AppCompatActivity {
             return insets;
         });
         textView = findViewById(R.id.textView);
+
+    }
+
+    public void vistaTraductor(MenuItem item) {
+        startActivity(new Intent(this, TraduccionActivity.class));
+    }
+
+    public void vistaMaterial(MenuItem item) {
+        startActivity(new Intent(this, PerfilActivity.class));
+    }
+
+    public void vistaUsuario(MenuItem item) {
+        startActivity(new Intent(this, PerfilActivity.class));
+    }
+
+    public void vistaInicio(MenuItem item) {
+        startActivity(new Intent(this, InicioActivity.class));
     }
 
     public void speak(View view) {

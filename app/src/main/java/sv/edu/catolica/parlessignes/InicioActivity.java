@@ -13,6 +13,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class InicioActivity extends AppCompatActivity {
 
     Button btnNiveles,btnCategorias;
@@ -31,24 +33,59 @@ public class InicioActivity extends AppCompatActivity {
         btnNiveles = findViewById(R.id.btn_ver_niveles);
         btnCategorias = findViewById(R.id.btn_ver_categoria);
 
-        // Click para ver niveles
-        btnNiveles.setOnClickListener(view -> {
-            Intent intent = new Intent(InicioActivity.this, NivelesActivity.class);
+        findViewById(R.id.btn_ver_niveles).setOnClickListener(v -> {
+            Intent intent = new Intent(this, NivelesActivity.class);
             startActivity(intent);
         });
 
-        // Click para ver categorías
-        btnCategorias.setOnClickListener(view -> {
-            Intent intent = new Intent(InicioActivity.this, CategoriasActivity.class);
+        findViewById(R.id.btn_ver_categoria).setOnClickListener(v -> {
+            Intent intent = new Intent(this, CategoriasActivity.class);
             startActivity(intent);
+        });
+
+
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            int id = item.getItemId();
+
+            if (id == R.id.nav_home) {
+                startActivity(new Intent(this, InicioActivity.class));
+                finish();
+                return true;
+            } else if (id == R.id.nav_library) {
+                startActivity(new Intent(this, NivelesActivity.class));
+                finish();
+                return true;
+            } else if (id == R.id.nav_voice) {
+                startActivity(new Intent(this, TraduccionActivity.class));
+                finish();
+                return true;
+            } else if (id == R.id.nav_user) {
+                startActivity(new Intent(this, NivelesActivity.class));
+                finish();
+                return true;
+            }
+
+            return false;
         });
     }
 
 
     public void vistaTraductor(MenuItem item) {
-        Intent intent = new Intent(this, TraduccionActivity.class);
-        startActivity(intent);
+        startActivity(new Intent(this, TraduccionActivity.class));
     }
 
 
+    public void vistaMaterial(MenuItem item) {
+        startActivity(new Intent(this, PerfilActivity.class));
+    }
+
+    public void vistaUsuario(MenuItem item) {
+        startActivity(new Intent(this, PerfilActivity.class));
+    }
+
+    public void vistaInicio(MenuItem item) {
+        startActivity(new Intent(this, InicioActivity.class));
+    }
 }
