@@ -1,6 +1,8 @@
 package sv.edu.catolica.parlessignes;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -21,5 +23,20 @@ public class NivelesActivity extends AppCompatActivity {
 
     }
 
+    public void vistaTraductor(MenuItem item) {
+        startActivity(new Intent(this, TraduccionActivity.class));
+    }
 
+
+    public void vistaMaterial(MenuItem item) {
+        startActivity(new Intent(this, PerfilActivity.class));
+    }
+
+    public void vistaUsuario(MenuItem item) {
+        startActivity(new Intent(this, PerfilActivity.class));
+    }
+
+    public void vistaInicio(MenuItem item) {
+        startActivity(new Intent(this, InicioActivity.class));
+    }
 }

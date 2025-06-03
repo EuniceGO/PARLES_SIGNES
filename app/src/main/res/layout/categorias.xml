@@ -5,79 +5,91 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CategoriasActivity">
+    tools:context=".CategoriasActivity"
+    android:background="@color/white">
 
-    <!-- Texto Bienvenido -->
-
-    <ImageView
-        android:id="@+id/monsterImage"
-        android:layout_width="149dp"
-        android:layout_height="165dp"
-        android:layout_marginTop="76dp"
-        android:src="@drawable/mounstruito"
+    <!-- Contenedor de bienvenida -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bienvenidaContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="10dp">
 
-    <TextView
-        android:id="@+id/Hola_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="44dp"
-        android:text="Hola!"
-        android:textColor="#563ec8"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/monsterImage"
+            android:layout_width="149dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/mounstruito"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.896"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/bienvenido_categorias"
-        android:layout_width="160dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="112dp"
-        android:text="Bienvenido a la sección de categorias"
-        android:textAlignment="center"
-        android:textColor="#563ec8"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/Hola_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="60dp"
+            android:text="Hola!"
+            android:textColor="#563ec8"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/id_name_user"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="88dp"
-        android:text="Nombre del usuario"
-        android:textColor="#563ec8"
-        android:textSize="15sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/id_name_user"
+            android:layout_width="132dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:text="Nombre del usuario"
+            android:textColor="#563ec8"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Hola_text" />
 
-    <TextView
-        android:id="@+id/id_categorias"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="228dp"
-        android:text="@string/txt_categorias"
-        android:textColor="#563ec8"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/bienvenido_categorias"
+            android:layout_width="212dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Bienvenido a la sección de categorias"
+            android:textColor="#563ec8"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/monsterImage"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_name_user" />
+
+        <TextView
+            android:id="@+id/id_categorias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/txt_categorias"
+            android:textColor="#563ec8"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bienvenido_categorias" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <LinearLayout
         android:id="@+id/categoriaContainer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:baselineAligned="false"
         android:gravity="center"
         android:orientation="horizontal"
@@ -85,14 +97,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/id_categorias">
+        app:layout_constraintTop_toBottomOf="@+id/bienvenidaContainer">
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <Button
                 android:id="@+id/btn_saludo"
@@ -100,7 +113,6 @@
                 android:layout_height="121dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/btn_square"
-                android:backgroundTint="#00FFFFFF"
                 android:drawableTop="@drawable/saludo_icon"
                 android:drawablePadding="4dp"
                 android:gravity="center"
@@ -123,7 +135,6 @@
                 android:layout_height="121dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/btn_square"
-                android:backgroundTint="#00FFFFFF"
                 android:drawableTop="@drawable/comida_icon"
                 android:drawablePadding="4dp"
                 android:gravity="center"
@@ -136,17 +147,17 @@
 
     <LinearLayout
         android:id="@+id/categoria2Container"
-        android:layout_width="410dp"
-        android:layout_height="177dp"
-        android:layout_marginTop="188dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:baselineAligned="false"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/id_categorias">
+        app:layout_constraintTop_toBottomOf="@+id/categoriaContainer"
+        app:layout_constraintVertical_bias="0.163">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -161,7 +172,6 @@
                 android:layout_height="121dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/btn_square"
-                android:backgroundTint="#00FFFFFF"
                 android:drawableTop="@drawable/categoria_icon"
                 android:drawablePadding="4dp"
                 android:gravity="center"
@@ -184,7 +194,6 @@
                 android:layout_height="121dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/btn_square"
-                android:backgroundTint="#00FFFFFF"
                 android:drawableTop="@drawable/animales_icon"
                 android:drawablePadding="4dp"
                 android:gravity="center"
@@ -194,5 +203,16 @@
                 android:textSize="15sp" />
         </LinearLayout>
     </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationPerfil2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#563ec8"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
