@@ -30,13 +30,16 @@ public class Traduccion_escrita extends AppCompatActivity {
     }
     public void vistaTraductorV(MenuItem item) {
         startActivity(new Intent(this, TraduccionActivity.class));
+        finish();
     }
 
     public void vistaTraductor_Escrito(MenuItem item) {
         startActivity(new Intent(this, Traduccion_escrita.class));
+        finish();
     }
 
     public void vistaInicioV(MenuItem item) {
         startActivity(new Intent(this, InicioActivity.class));
+        finish();
     }
 }

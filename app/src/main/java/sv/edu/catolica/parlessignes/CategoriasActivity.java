@@ -28,18 +28,22 @@ public class CategoriasActivity extends AppCompatActivity {
 
     public void vistaTraductor(MenuItem item) {
         startActivity(new Intent(this, TraduccionActivity.class));
+        finish();
     }
 
 
     public void vistaMaterial(MenuItem item) {
         startActivity(new Intent(this, PerfilActivity.class));
+        finish();
     }
 
     public void vistaUsuario(MenuItem item) {
         startActivity(new Intent(this, PerfilActivity.class));
+        finish();
     }
 
     public void vistaInicio(MenuItem item) {
         startActivity(new Intent(this, InicioActivity.class));
+        finish();
     }
 }

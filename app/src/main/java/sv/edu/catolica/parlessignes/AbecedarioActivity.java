@@ -77,6 +77,7 @@ public class AbecedarioActivity extends AppCompatActivity {
     public void Retroceder(View view) {
         Intent intent = new Intent(this, MaterialApoyoActivity.class);
         startActivity(intent);
+        finish();
     }
 }
 

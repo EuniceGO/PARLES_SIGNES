@@ -3,6 +3,7 @@ package sv.edu.catolica.parlessignes;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -60,4 +61,9 @@ public class VideoActivity extends AppCompatActivity {
     }
 
 
+    public void Retroceder(View view) {
+        Intent intent = new Intent(this, MaterialApoyoActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

@@ -173,6 +173,12 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:contentDescription="@string/video_txt_titulo3"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/video_tres" />
 
                 <TextView
                     android:layout_width="wrap_content"

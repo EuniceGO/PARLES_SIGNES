@@ -27,16 +27,19 @@ public class MaterialApoyoActivity extends AppCompatActivity {
         findViewById(R.id.areaDoc).setOnClickListener(v -> {
             Intent intent = new Intent(this, Documentos.class);
             startActivity(intent);
+            finish();
         });
 
         findViewById(R.id.areaVideo).setOnClickListener(v -> {
             Intent intent = new Intent(this, VideoActivity.class);
             startActivity(intent);
+            finish();
         });
 
         findViewById(R.id.areaImg).setOnClickListener(v -> {
             Intent intent = new Intent(this, AbecedarioActivity.class);
             startActivity(intent);
+            finish();
         });
 
 
@@ -45,18 +48,22 @@ public class MaterialApoyoActivity extends AppCompatActivity {
 
     public void vistaTraductor(MenuItem item) {
         startActivity(new Intent(this, TraduccionActivity.class));
+        finish();
     }
 
 
     public void vistaMaterial(MenuItem item) {
         startActivity(new Intent(this, MaterialApoyoActivity.class));
+        finish();
     }
 
     public void vistaUsuario(MenuItem item) {
         startActivity(new Intent(this, PerfilActivity.class));
+        finish();
     }
 
     public void vistaInicio(MenuItem item) {
         startActivity(new Intent(this, InicioActivity.class));
+        finish();
     }
 }
