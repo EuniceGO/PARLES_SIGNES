@@ -2,6 +2,7 @@ package sv.edu.catolica.parlessignes;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -71,6 +72,11 @@ public class AbecedarioActivity extends AppCompatActivity {
         fila.addView(textoLetra);
         fila.addView(imagenLetra);
         letrasContainer.addView(fila);
+    }
+
+    public void Retroceder(View view) {
+        Intent intent = new Intent(this, MaterialApoyoActivity.class);
+        startActivity(intent);
     }
 }
 

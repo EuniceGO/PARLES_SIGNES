@@ -8,6 +8,18 @@
     android:background="@drawable/login_back"
     android:padding="16dp">
 
+    <Button
+        android:id="@+id/btnRetroceder"
+        android:layout_width="34dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/icon_back"
+        android:backgroundTint="@color/white"
+        android:onClick="Retroceder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"

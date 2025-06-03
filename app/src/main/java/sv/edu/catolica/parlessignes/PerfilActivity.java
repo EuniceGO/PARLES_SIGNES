@@ -44,7 +44,7 @@ public class PerfilActivity extends AppCompatActivity {
 
 
     public void vistaMaterial(MenuItem item) {
-        startActivity(new Intent(this, PerfilActivity.class));
+        startActivity(new Intent(this, MaterialApoyoActivity.class));
     }
 
     public void vistaUsuario(MenuItem item) {

@@ -2,6 +2,7 @@ package sv.edu.catolica.parlessignes;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,5 +39,24 @@ public class MaterialApoyoActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+
+
+    }
+
+    public void vistaTraductor(MenuItem item) {
+        startActivity(new Intent(this, TraduccionActivity.class));
+    }
+
+
+    public void vistaMaterial(MenuItem item) {
+        startActivity(new Intent(this, MaterialApoyoActivity.class));
+    }
+
+    public void vistaUsuario(MenuItem item) {
+        startActivity(new Intent(this, PerfilActivity.class));
+    }
+
+    public void vistaInicio(MenuItem item) {
+        startActivity(new Intent(this, InicioActivity.class));
     }
 }

@@ -13,14 +13,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center_horizontal"
         android:background="@color/white"
         android:spacing="16dp">
+
+        <Button
+            android:id="@+id/btnRetroceder"
+            android:layout_width="34dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/icon_back"
+            android:backgroundTint="@color/black"
+            android:onClick="Retroceder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="350dp"
-            android:layout_marginBottom="16dp"
             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:padding="8dp"
@@ -154,6 +164,8 @@
             app:cardCornerRadius="16dp"
             app:cardElevation="8dp">
 
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -161,12 +173,6 @@
                 android:orientation="vertical"
                 android:padding="16dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:contentDescription="@string/video_txt_titulo3"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/video_tres" />
 
                 <TextView
                     android:layout_width="wrap_content"

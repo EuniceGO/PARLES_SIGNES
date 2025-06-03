@@ -57,7 +57,7 @@ public class InicioActivity extends AppCompatActivity {
                 finish();
                 return true;
             } else if (id == R.id.nav_library) {
-                startActivity(new Intent(this, NivelesActivity.class));
+                startActivity(new Intent(this, MaterialApoyoActivity.class));
                 finish();
                 return true;
             } else if (id == R.id.nav_voice) {
@@ -81,7 +81,7 @@ public class InicioActivity extends AppCompatActivity {
 
 
     public void vistaMaterial(MenuItem item) {
-        startActivity(new Intent(this, PerfilActivity.class));
+        startActivity(new Intent(this, MaterialApoyoActivity.class));
     }
 
     public void vistaUsuario(MenuItem item) {
