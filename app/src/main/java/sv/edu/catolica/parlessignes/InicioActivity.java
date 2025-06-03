@@ -31,6 +31,11 @@ public class InicioActivity extends AppCompatActivity {
         btnNiveles = findViewById(R.id.btn_ver_niveles);
         btnCategorias = findViewById(R.id.btn_ver_categoria);
 
+        findViewById(R.id.btn_verMaterial).setOnClickListener(v -> {
+            Intent intent = new Intent(this, MaterialApoyoActivity.class);
+            startActivity(intent);
+        });
+
         findViewById(R.id.btn_ver_niveles).setOnClickListener(v -> {
             Intent intent = new Intent(this, NivelesActivity.class);
             startActivity(intent);

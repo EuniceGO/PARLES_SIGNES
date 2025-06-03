@@ -22,9 +22,23 @@
     <string name="txt_contrasena">Contraseña:</string>
     <string name="txt_nombre">Nombre:</string>
     <string name="txt_correo">Correo:</string>
+    <string name="txt_videos">Videos</string>
+    <string name="txt_documentos">Documentos</string>
+    <string name="txt_abecedario">Abecedario</string>
 
     <string name="menu_perfil">Perfil</string>
     <string name="menu_traductor">Traductor</string>
     <string name="menu_material">Material</string>
     <string name="menu_inicio">Inicio</string>
+
+    <string name="video_txt_titulo3">LENGUA DE SEÑAS</string>
+    <string name="video_txt_titulo1">Abecedario en Señas</string>
+    <string name="video_txt_titulo4">Comunicación básica en Lengua de Señas (LESCO)</string>
+    <string name="video_txt_titulo5">French Sign Language "LSF" Basic Signs</string>
+    <string name="video_txt_description3">Lengua de signos americano ASL para principiantes</string>
+    <string name="video_txt_description2">LSM Saludos y despedidas.</string>
+    <string name="video_txt_description1">Aprende el lenguaje de señas, con este sencillo video.</string>
+    <string name="video_txt_description4">Vocabulario básico de Cortesía en Lengua de Señas Costarricense</string>
+    <string name="video_txt_description5">Join us for French in February! All month long we\'ll be brushing up on our French vocabulary through sign language [LSF]!</string>
+
 </resources>
