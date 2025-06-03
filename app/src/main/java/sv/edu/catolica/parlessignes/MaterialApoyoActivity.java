@@ -34,7 +34,7 @@ public class MaterialApoyoActivity extends AppCompatActivity {
         });
 
         findViewById(R.id.areaImg).setOnClickListener(v -> {
-            Intent intent = new Intent(this, VideoActivity.class);
+            Intent intent = new Intent(this, AbecedarioActivity.class);
             startActivity(intent);
         });
 
