@@ -121,7 +121,6 @@ public class TraduccionActivity extends AppCompatActivity {
         contenedorVertical.addView(filaActual);
 
         int anchoOcupado = 0;
-
         for (char c : texto.toCharArray()) {
             if (Character.isLetter(c) || c == 'ñ') {
                 String nombreImagen = "letra_" + (c == 'ñ' ? "ene" : c);
@@ -134,6 +133,30 @@ public class TraduccionActivity extends AppCompatActivity {
                     params.setMargins(margenEntreImagenes / 2, 0, margenEntreImagenes / 2, 0);
                     imagen.setLayoutParams(params);
 
+                    if (anchoOcupado + sizeImagen + margenEntreImagenes > maxAnchoFila) {
+                        filaActual = new LinearLayout(this);
+                        filaActual.setOrientation(LinearLayout.HORIZONTAL);
+                        filaActual.setLayoutParams(new LinearLayout.LayoutParams(
+                                LinearLayout.LayoutParams.MATCH_PARENT,
+                                LinearLayout.LayoutParams.WRAP_CONTENT));
+                        filaActual.setPadding(0, 0, 0, margenEntreImagenes);
+                        contenedorVertical.addView(filaActual);
+                        anchoOcupado = 0;
+                    }
+
+                    filaActual.addView(imagen);
+                    anchoOcupado += sizeImagen + margenEntreImagenes;
+                }
+            } else if (Character.isDigit(c)) {
+                String nombreImagen = "letra_" + c;
+                int id = getResources().getIdentifier(nombreImagen, "drawable", getPackageName());
+
+                if (id != 0) {
+                    ImageView imagen = new ImageView(this);
+                    imagen.setImageResource(id);
+                    LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(sizeImagen, sizeImagen);
+                    params.setMargins(margenEntreImagenes / 2, 0, margenEntreImagenes / 2, 0);
+                    imagen.setLayoutParams(params);
 
                     if (anchoOcupado + sizeImagen + margenEntreImagenes > maxAnchoFila) {
                         filaActual = new LinearLayout(this);
