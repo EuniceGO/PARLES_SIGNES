@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@drawable/casa"
+        android:title="Inicio"
+        android:onClick="vistaInicioV"/>
+
+    <item
+        android:id="@+id/nav_voz"
+        android:icon="@drawable/micro"
+        android:title="Trad. Voz"
+        android:onClick="vistaTraductorV"/>
+
+    <item
+        android:id="@+id/nav_escrito"
+        android:icon="@drawable/icon_mensaje"
+        android:title="Trad. Escrito"
+        android:onClick="vistaTraductor_Escrito"/>
+</menu>

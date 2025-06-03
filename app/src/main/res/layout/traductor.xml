@@ -40,32 +40,30 @@
     </ScrollView>
 
 
+    <!-- Bottom Navigation -->
     <Button
         android:id="@+id/button"
         android:layout_width="115dp"
         android:layout_height="112dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="104dp"
         android:background="@drawable/microfono"
         android:onClick="speak"
-        android:text="@string/txt_traductor"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/scrollView" />
 
-    <!-- Bottom Navigation -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigation"
-        android:layout_width="0dp"
+        android:id="@+id/bottomNavigationT"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
         android:background="#563ec8"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav_menu"
-        tools:ignore="VisualLintBottomNav" />
+        app:menu="@menu/menu_traductor"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
 
 
 

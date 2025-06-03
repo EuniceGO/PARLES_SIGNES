@@ -24,7 +24,7 @@ public class MaterialApoyoActivity extends AppCompatActivity {
 
 
         findViewById(R.id.areaDoc).setOnClickListener(v -> {
-            Intent intent = new Intent(this, NivelesActivity.class);
+            Intent intent = new Intent(this, Documentos.class);
             startActivity(intent);
         });
 

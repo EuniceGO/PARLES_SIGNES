@@ -44,7 +44,7 @@ public class Documentos extends AppCompatActivity {
     }
 
     public void Retroceder(View view) {
-        Intent intent = new Intent(this, InicioActivity.class);
+        Intent intent = new Intent(this, MaterialApoyoActivity.class);
         startActivity(intent);
     }
 }

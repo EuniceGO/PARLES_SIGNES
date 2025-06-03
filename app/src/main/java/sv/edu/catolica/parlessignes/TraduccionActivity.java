@@ -14,6 +14,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 import java.util.ArrayList;
 
 public class TraduccionActivity extends AppCompatActivity {
@@ -32,21 +34,39 @@ public class TraduccionActivity extends AppCompatActivity {
         });
         textView = findViewById(R.id.textView);
 
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationT);
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            int id = item.getItemId();
+
+            if (id == R.id.nav_inicio) {
+                startActivity(new Intent(this, InicioActivity.class));
+                finish();
+                return true;
+
+            } else if (id == R.id.nav_voz) {
+                startActivity(new Intent(this, TraduccionActivity.class));
+                finish();
+                return true;
+            } else if (id == R.id.nav_escrito) {
+                startActivity(new Intent(this, Traduccion_escrita.class));
+                finish();
+                return true;
+            }
+
+            return false;
+        });
+
     }
 
-    public void vistaTraductor(MenuItem item) {
+    public void vistaTraductorV(MenuItem item) {
         startActivity(new Intent(this, TraduccionActivity.class));
     }
 
-    public void vistaMaterial(MenuItem item) {
-        startActivity(new Intent(this, PerfilActivity.class));
+    public void vistaTraductor_Escrito(MenuItem item) {
+        startActivity(new Intent(this, Traduccion_escrita.class));
     }
 
-    public void vistaUsuario(MenuItem item) {
-        startActivity(new Intent(this, PerfilActivity.class));
-    }
-
-    public void vistaInicio(MenuItem item) {
+    public void vistaInicioV(MenuItem item) {
         startActivity(new Intent(this, InicioActivity.class));
     }
 
