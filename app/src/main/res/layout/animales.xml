@@ -6,16 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/login_back"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <Button
         android:id="@+id/btnRetroceder"
-        android:layout_width="34dp"
-        android:layout_height="27dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/icon_back"
         android:backgroundTint="@color/white"
+        android:contentDescription="@string/retroceder_abece"
         android:onClick="Retroceder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="216dp"
-        android:text="Animales"
+        android:text="@string/animales_titulo"
         android:textColor="#563ec8"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +39,7 @@
         android:id="@+id/scrollView"
         android:layout_width="380dp"
         android:layout_height="524dp"
-        android:contentDescription="Lista de animales"
+        android:contentDescription="@string/lista_de_animales_ani"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

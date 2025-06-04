@@ -6,6 +6,7 @@
     android:layout_width="411dp"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_parles3"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <Button
@@ -15,7 +16,7 @@
         android:backgroundTint="@color/white"
         android:drawablePadding="30dp"
         android:paddingHorizontal="60dp"
-        android:text="Iniciar Sesión"
+        android:text="@string/iniciar_sesi_n"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -33,7 +34,7 @@
         android:backgroundTint="#4A4ACB"
         android:drawablePadding="30dp"
         android:paddingHorizontal="60dp"
-        android:text="Registrarse"
+        android:text="@string/registrarse_txt"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -68,6 +69,7 @@
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
         android:padding="10dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -79,10 +81,11 @@
         android:id="@+id/txt_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:text="@string/txt_correo"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/correo_user"
-        app:layout_constraintStart_toStartOf="@id/correo_user"
-        android:layout_marginBottom="4dp" />
+        app:layout_constraintStart_toStartOf="@id/correo_user" />
 
     <EditText
         android:id="@+id/contra_user"
@@ -92,11 +95,12 @@
         android:layout_marginTop="52dp"
         android:layout_marginEnd="50dp"
         android:autofillHints=""
-        android:hint="@string/txt_contrasena"
         android:ems="10"
+        android:hint="@string/txt_contrasena"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:padding="10dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,11 +112,12 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:autofillHints=""
         android:text="@string/txt_nombre"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/nombre_user"
-        app:layout_constraintStart_toStartOf="@id/nombre_user"
-        android:layout_marginBottom="4dp" />
+        app:layout_constraintStart_toStartOf="@id/nombre_user" />
 
     <EditText
         android:id="@+id/nombre_user"
@@ -126,21 +131,22 @@
         android:inputType="text"
         android:minHeight="48dp"
         android:padding="10dp"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:text="@string/txt_contrasena"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@id/contra_user"
-        app:layout_constraintStart_toStartOf="@id/contra_user"
-        android:layout_marginBottom="4dp" />
+        app:layout_constraintStart_toStartOf="@id/contra_user" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

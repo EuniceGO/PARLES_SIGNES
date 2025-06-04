@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo_parles3"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <EditText
@@ -18,7 +19,7 @@
         android:ems="10"
         android:inputType="textPassword"
         android:padding="10dp"
-        android:hint="......"
+        android:hint="@string/puntos_txt"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -48,7 +49,7 @@
         android:drawablePadding="30dp"
         android:onClick="Registrarse"
         android:paddingHorizontal="60dp"
-        android:text="Registrate"
+        android:text="@string/registrate_login"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -66,7 +67,7 @@
         android:drawablePadding="30dp"
         android:onClick="Inicio"
         android:paddingHorizontal="60dp"
-        android:text="Iniciar Sesión"
+        android:text="@string/iniciar_sesi_n_login"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -84,7 +85,7 @@
         android:layout_marginEnd="50dp"
         android:ems="10"
         android:minHeight="48dp"
-        android:hint="Correo electrónico"
+        android:hint="@string/correo_electr_nico_login"
         android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textColor="@color/black"
@@ -99,7 +100,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:layout_marginBottom="8dp"
-        android:text="Contraseña:"
+        android:text="@string/contrase_a_login"
         app:layout_constraintBottom_toTopOf="@id/contra"
         app:layout_constraintStart_toStartOf="@id/contra" />
 
@@ -109,7 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:textColor="@color/black"
-        android:text="Correo:"
+        android:text="@string/correo_login"
         app:layout_constraintBottom_toTopOf="@id/correo"
         app:layout_constraintStart_toStartOf="@id/correo" />
 

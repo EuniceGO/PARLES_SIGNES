@@ -7,16 +7,18 @@
     android:layout_height="match_parent"
     android:background="@drawable/login_back"
     android:padding="16dp"
+    android:orientation="vertical"
     tools:context=".NumerosActivity">
 
     <Button
         android:id="@+id/btnRetroceder"
-        android:layout_width="34dp"
-        android:layout_height="27dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/icon_back"
         android:backgroundTint="@color/white"
+        android:contentDescription="@string/retroceder_abece"
         android:onClick="Retroceder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="232dp"
-        android:text="Números"
+        android:text="@string/n_meros"
         android:textColor="#563ec8"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,6 +41,7 @@
         android:layout_width="374dp"
         android:layout_height="540dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/numeros_mostrados_num"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"

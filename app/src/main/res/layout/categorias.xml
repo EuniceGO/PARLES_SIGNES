@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CategoriasActivity"
+    android:orientation="vertical"
     android:background="@color/white">
 
     <!-- Contenedor de bienvenida -->
@@ -35,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="60dp"
-            android:text="Hola!"
+            android:text="@string/hola_categ"
             android:textColor="#563ec8"
             android:textSize="22sp"
             android:textStyle="bold"
@@ -48,7 +49,7 @@
             android:layout_height="18dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="12dp"
-            android:text="Nombre del usuario"
+            android:text="@string/sigue_aprendiendo_cate"
             android:textColor="#563ec8"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -61,7 +62,7 @@
             android:layout_height="41dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:text="Bienvenido a la sección de categorias"
+            android:text="@string/bienvenido_a_la_secci_n_de_categorias"
             android:textColor="#563ec8"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -139,7 +140,7 @@
                 android:drawablePadding="4dp"
                 android:gravity="center"
                 android:paddingTop="8dp"
-                android:text="Abecedario"
+                android:text="@string/abecedario_categ"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>
@@ -176,7 +177,7 @@
                 android:drawablePadding="4dp"
                 android:gravity="center"
                 android:paddingTop="8dp"
-                android:text="Números"
+                android:text="@string/n_meros_categ"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>
@@ -198,7 +199,7 @@
                 android:drawablePadding="4dp"
                 android:gravity="center"
                 android:paddingTop="8dp"
-                android:text="Animales"
+                android:text="@string/animales_categ"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>

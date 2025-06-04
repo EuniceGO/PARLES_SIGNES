@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/main"
+    android:orientation="vertical"
     tools:context=".Zona_Aprendizaje"
     android:background="@color/white">
 
@@ -36,7 +37,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="90dp"
                 android:layout_marginBottom="16dp"
-                android:text="Escribe Algo:"
+                android:text="@string/escribe_algo_te"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -46,9 +48,10 @@
                 android:layout_height="200dp"
                 android:background="@drawable/rounded_edittext"
                 android:gravity="top|start"
-                android:hint="Aquí tu texto"
+                android:hint="@string/aqu_tu_texto_te"
                 android:padding="16dp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
 
             <Button
                 android:id="@+id/btnCheck"
@@ -57,12 +60,13 @@
                 android:layout_marginStart="100dp"
                 android:layout_marginTop="20dp"
                 android:backgroundTint="#3F51B5"
-                android:text="Confirmar"
+                android:text="@string/confirmar_te"
                 android:textColor="#FFFFFF" />
 
             <ScrollView
                 android:layout_width="353dp"
                 android:layout_height="207dp"
+                android:contentDescription="@string/scrolltraductor_text"
                 android:layout_marginTop="16dp">
 
                 <LinearLayout

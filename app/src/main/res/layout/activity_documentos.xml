@@ -7,16 +7,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Documentos"
+    android:orientation="vertical"
     android:background="@color/white">
 
     <Button
         android:id="@+id/btnRetroceder"
-        android:layout_width="34dp"
-        android:layout_height="27dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/icon_back"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/retroceder_abece"
         android:onClick="Retroceder"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,7 +28,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Área de Documentos"
+        android:text="@string/rea_de_documentos_docu"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:textStyle="bold"
@@ -79,7 +81,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
-                        android:text="Documentos"
+                        android:text="@string/documentos_docu"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -93,8 +95,7 @@
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="DIDÁCTICA DE LA LENGUA
-                                    DE SEÑAS ARGENTINA"
+                        android:text="@string/did_ctica_de_la_lengua_de_se_as_argentina_docu"
                         android:textColor="@color/black"
                         android:textSize="15sp"
                         />
@@ -104,7 +105,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="20dp"
-                        android:text="Documento de aprendizaje argentino"
+                        android:text="@string/documento_de_aprendizaje_argentino_docu"
                         android:textColor="@color/black"
                         android:textSize="10sp" />
 
@@ -114,7 +115,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginLeft="20dp"
-                        android:text="Ver PDF"
+                        android:text="@string/ver_pdf_docu"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -141,7 +142,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
-                        android:text="Documentos"
+                        android:text="@string/documentos_docu"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -155,9 +156,7 @@
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="DICCIONARIO BÁSICO
-                                        DE LA
-                                        LENGUA DE SEÑAS COLOMBIANA"
+                        android:text="@string/diccionario_b_sico_de_la_lengua_de_se_as_colombiana"
                         android:textSize="15sp"
                         android:textColor="@color/black"/>
 
@@ -166,7 +165,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="20dp"
-                        android:text="Diccionario en el que podras informarte mucho más sobre el lenguaje de señas en Colombia"
+                        android:text="@string/diccionario_en_el_que_colombia"
                         android:textSize="10sp"
                         android:textColor="@color/black"/>
 
@@ -176,7 +175,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="16dp"
-                        android:text="Ver PDF"
+                        android:text="@string/ver_pdf_docu"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -203,7 +202,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
-                        android:text="Documentos"
+                        android:text="@string/documentos_docu"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -217,7 +216,7 @@
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="DICCIONARIO DE LENGUAJE DE SEÑAS MEXICANO"
+                        android:text="@string/diccionario_de_lenguaje_de_se_as_mexicano"
                         android:textSize="15sp"
                         android:textColor="@color/black"/>
 
@@ -226,7 +225,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="20dp"
-                        android:text="Diccionario mexicano LSM para aprendizaje y lectura"
+                        android:text="@string/diccionario_mexicano_lsm_para_aprendiza"
                         android:textSize="10sp"
                         android:textColor="@color/black"/>
 
@@ -236,7 +235,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginLeft="20dp"
-                        android:text="Ver PDF"
+                        android:text="@string/ver_pdf_docu"
                         />
                 </LinearLayout>
             </LinearLayout>
@@ -263,7 +262,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
-                        android:text="Documentos"
+                        android:text="@string/documentos_docu"
                         android:textColor="@color/black"/>
                 </LinearLayout>
 
@@ -277,7 +276,7 @@
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:text="LENGUAJE DE SEÑAS CHILE"
+                        android:text="@string/lenguaje_de_se_as_chile"
                         android:textSize="15sp"
                         android:textColor="@color/black"/>
 
@@ -286,7 +285,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="20dp"
-                        android:text="Diccionario bilingüe - Lenguaje de Señas Chilena"
+                        android:text="@string/diccionario_biling_e_lenguaje_de_se_as_chilena"
                         android:textSize="10sp"
                         android:textColor="@color/black"/>
 
@@ -296,7 +295,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginLeft="20dp"
-                        android:text="Ver PDF"
+                        android:text="@string/ver_pdf_docu"
                         />
                 </LinearLayout>
             </LinearLayout>
