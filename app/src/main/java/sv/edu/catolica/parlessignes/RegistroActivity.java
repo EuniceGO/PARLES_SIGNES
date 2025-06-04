@@ -23,6 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -105,6 +106,7 @@ public class RegistroActivity extends AppCompatActivity {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
                             if (task.isSuccessful()) {
+                                agregarFrasesEjemplo(id);
                                 Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
                                 startActivity(intent);
                                 Toast.makeText(RegistroActivity.this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
@@ -152,5 +154,117 @@ public class RegistroActivity extends AppCompatActivity {
         Pattern pattern = Pattern.compile(emailRegex, Pattern.CASE_INSENSITIVE);
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
+    }
+    private void agregarFrasesEjemplo(String userId) {
+        FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+        Map<String, List<Map<String, Object>>> niveles = new HashMap<>();
+
+        niveles.put("abecedario", List.of(
+                frase("a", true),
+                frase("b", true),
+                frase("c", true),
+                frase("d", true),
+                frase("e", true),
+                frase("f", true),
+                frase("g", true),
+                frase("h", true),
+                frase("i", true),
+                frase("j", true),
+                frase("k", true),
+                frase("l", true),
+                frase("m", true),
+                frase("n", true),
+                frase("o", true),
+                frase("p", true),
+                frase("q", true),
+                frase("r", true),
+                frase("s", true),
+                frase("t", true),
+                frase("u", true),
+                frase("v", true),
+                frase("w", true),
+                frase("x", true),
+                frase("y", true),
+                frase("z", true)
+
+        ));
+
+        niveles.put("animales", List.of(
+                frase("pajaro", true),
+                frase("oso", false),
+                frase("buho", false),
+                frase("gato", false),
+                frase("leon", false),
+                frase("burro", false),
+                frase("lobo", false),
+                frase("raton", false),
+                frase("rana", false),
+                frase("caballo", false)
+        ));
+
+        niveles.put("meses", List.of(
+                frase("enero", true),
+                frase("febrero", false),
+                frase("marzo", false),
+                frase("mayo", false),
+                frase("abril", false),
+                frase("junio", false),
+                frase("julio", false),
+                frase("agosto", false),
+                frase("septiembre", false),
+                frase("octubre", false),
+                frase("noviembre", false),
+                frase("diciembre", false)
+        ));
+
+        niveles.put("numeros", List.of(
+                frase("1", true),
+                frase("2", false),
+                frase("3", false),
+                frase("4", false),
+                frase("5", false),
+                frase("6", false),
+                frase("7", false),
+                frase("8", false),
+                frase("9", false),
+                frase("0", false)
+        ));
+
+        niveles.put("mixto", List.of(
+                frase("febrero", true),
+                frase("gato", false),
+                frase("6", false),
+                frase("j", false),
+                frase("mayo", false),
+                frase("lobo", false),
+                frase("septiembre", false),
+                frase("k", false)
+        ));
+
+        for (Map.Entry<String, List<Map<String, Object>>> entry : niveles.entrySet()) {
+            String nivelNombre = entry.getKey();
+            List<Map<String, Object>> frases = entry.getValue();
+
+            // Crear documento del nivel
+            db.collection("usuario").document(userId)
+                    .collection("niveles").document(nivelNombre)
+                    .set(Map.of("Completado", false));
+
+            // Crear subcolección frases
+            for (Map<String, Object> frase : frases) {
+                db.collection("usuario").document(userId)
+                        .collection("niveles").document(nivelNombre)
+                        .collection("frases")
+                        .add(frase);
+            }
+        }
+    }
+
+    private Map<String, Object> frase(String texto, boolean respuesta) {
+        Map<String, Object> map = new HashMap<>();
+        map.put("texto", texto);
+        map.put("respuesta", respuesta);
+        return map;
     }
 }

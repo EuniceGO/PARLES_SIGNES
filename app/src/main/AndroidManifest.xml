@@ -3,12 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="28"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
-
 
     <application
         android:allowBackup="true"
@@ -21,19 +22,34 @@
         android:theme="@style/Theme.PARLESSIGNES"
         tools:targetApi="31">
         <activity
+            android:name=".NivelesFinalizadosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Nivel_1Activity"
+            android:exported="false"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".Nivel_2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Nivel_3Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Nivel_4Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Nivel_5Activity"
+            android:exported="false" />
+        <activity
             android:name=".Nivel_completado"
             android:exported="false"
             android:screenOrientation="fullSensor" />
         <activity
             android:name=".Documentos"
             android:exported="false"
-            android:screenOrientation="fullSensor"/>
-        <activity
-            android:name=".Traduccion_escrita"
-            android:exported="false"
             android:screenOrientation="fullSensor" />
         <activity
-            android:name=".Zona_Aprendizaje"
+            android:name=".Traduccion_escrita"
             android:exported="false"
             android:screenOrientation="fullSensor" />
         <activity
@@ -59,10 +75,10 @@
             android:screenOrientation="fullSensor" />
         <activity
             android:name=".RegistroActivity"
-            android:screenOrientation="fullSensor"/>
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".InicioActivity"
-            android:screenOrientation="fullSensor"/>
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".NivelesActivity"
             android:screenOrientation="fullSensor" />
@@ -77,13 +93,13 @@
             android:screenOrientation="fullSensor" />
         <activity
             android:name=".AbecedarioActivity"
-            android:screenOrientation="fullSensor"/>
+            android:screenOrientation="fullSensor" />
         <activity
             android:name=".NumerosActivity"
-            android:screenOrientation="fullSensor"/>
-        <activity android:name=".AnimalesActivity"
-            android:screenOrientation="fullSensor"/>
-
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".AnimalesActivity"
+            android:screenOrientation="fullSensor" />
     </application>
 
 </manifest>

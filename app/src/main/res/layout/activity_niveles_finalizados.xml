@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Nivel desbloqueado"
+        android:text="Has completado todos los niveles"
         android:textColor="#555555"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,7 @@
         android:layout_width="217dp"
         android:layout_height="167dp"
         android:layout_marginTop="60dp"
-        android:background="@drawable/moustrito"
+        android:background="@drawable/mounstruito2"
         android:contentDescription="Imagen de contenido"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="Puedes pasar al siguiente nivel !"
+        android:text="Felicidades sigue practicando más!"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,6 +96,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/imageLabel"
+/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
