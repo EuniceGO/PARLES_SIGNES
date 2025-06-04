@@ -36,7 +36,10 @@ public class CategoriasActivity extends AppCompatActivity {
         btnAbecedario.setOnClickListener(v -> {
             startActivity(new Intent(CategoriasActivity.this, AbecedarioActivity.class));
         });
-
+        Button btnMeses = findViewById(R.id.btn_saludo);
+        btnMeses.setOnClickListener(v -> {
+            startActivity(new Intent(CategoriasActivity.this, MesesActivity.class));
+        });
     }
 
     public void vistaTraductor(MenuItem item) {

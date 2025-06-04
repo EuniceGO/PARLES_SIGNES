@@ -16,10 +16,20 @@ public class AnimalesActivity extends AppCompatActivity {
     private LinearLayout letrasContainer;
     private int filaCount = 0;
 
-    private final String[] animales = {
-            "raton", "rana", "pajaro", "leon", "lobo",
-            "oso", "gato", "buho", "burro", "caballo"
+
+    private final String[][] animales = {
+            {"raton", "Ratón"},
+            {"rana", "Rana"},
+            {"pajaro", "Pájaro"},
+            {"leon", "León"},
+            {"lobo", "Lobo"},
+            {"oso", "Oso"},
+            {"gato", "Gato"},
+            {"buho", "Búho"},
+            {"burro", "Burro"},
+            {"caballo", "Caballo"}
     };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +38,13 @@ public class AnimalesActivity extends AppCompatActivity {
         setContentView(R.layout.animales);
 
         letrasContainer = findViewById(R.id.letrasContainer);
-
-        for (String animal : animales) {
-            agregarAnimal(animal);
+        for (String[] animal : animales) {
+            agregarAnimal(animal[0], animal[1]);
         }
+
     }
 
-    private void agregarAnimal(String animal) {
+    private void agregarAnimal(String animalCodigo, String animalMostrar) {
         LinearLayout fila = new LinearLayout(this);
         fila.setOrientation(LinearLayout.HORIZONTAL);
         fila.setPadding(16, 16, 16, 16);
@@ -48,23 +58,24 @@ public class AnimalesActivity extends AppCompatActivity {
         filaCount++;
 
         TextView textoAnimal = new TextView(this);
-        textoAnimal.setText(capitalizar(animal));
+        textoAnimal.setText(animalMostrar); // Muestra con tilde
         textoAnimal.setTextSize(24);
         textoAnimal.setTextColor(getResources().getColor(android.R.color.black));
         textoAnimal.setPadding(0, 0, 16, 0);
 
-        String nombreRecurso = "letra_" + animal;
+        String nombreRecurso = "letra_" + animalCodigo; // Usa sin tilde para obtener el drawable
         int resId = getResources().getIdentifier(nombreRecurso, "drawable", getPackageName());
 
         ImageView imagenAnimal = new ImageView(this);
         imagenAnimal.setImageResource(resId);
         imagenAnimal.setLayoutParams(new LinearLayout.LayoutParams(300, 300));
-        imagenAnimal.setContentDescription("Animal " + animal);
+        imagenAnimal.setContentDescription("Animal " + animalCodigo);
 
         fila.addView(textoAnimal);
         fila.addView(imagenAnimal);
         letrasContainer.addView(fila);
     }
+
 
     private String capitalizar(String texto) {
         return texto.substring(0, 1).toUpperCase() + texto.substring(1).toLowerCase();

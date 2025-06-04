@@ -54,6 +54,10 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".MesesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Traduccion_escrita"
             android:exported="false"
             android:screenOrientation="portrait"
