@@ -20,9 +20,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!-- TODO: Aquí va TODO tu contenido anterior intacto -->
-            <!-- ... desde aquí ... -->
-
             <!-- Imagen bienvenida -->
             <ImageView
                 android:id="@+id/monsterImage"

@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.view.View;
 
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -43,6 +44,7 @@ public class Nivel_1Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_nivel1);
 
         db = FirebaseFirestore.getInstance();

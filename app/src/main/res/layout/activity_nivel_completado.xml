@@ -16,12 +16,13 @@
         android:id="@+id/btnCerrar"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_margin="16dp"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:src="@drawable/icon_cerrar"
         android:contentDescription="Cerrar"
-        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/icon_cerrar"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
 
 
     <!-- Subtítulo -->
@@ -38,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="Excelente lo lograste"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Nivel desbloqueado"
-        android:textColor="#555555"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -79,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="Puedes pasar al siguiente nivel !"
-        android:textColor="#000000"
+        android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,7 +92,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="24dp"
         android:text="Continuar"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

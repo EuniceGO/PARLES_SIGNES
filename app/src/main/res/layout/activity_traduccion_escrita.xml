@@ -1,108 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/main"
-    android:orientation="vertical"
-    tools:context=".Zona_Aprendizaje"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".TraduccionEscritaActivity">
 
-    <!-- Botón cerrar en la esquina superior derecha -->
-
-    <!-- CardView principal -->
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardContainer"
-        android:layout_width="373dp"
-        android:layout_height="620dp"
-        android:layout_marginTop="100dp"
-        app:cardCornerRadius="24dp"
-        app:cardElevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+    <!-- ScrollView que contiene todo el contenido visible -->
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/white">
-
-        <LinearLayout
-            android:layout_width="373dp"
-            android:layout_height="620dp"
-            android:gravity="center_horizontal"
-            android:orientation="vertical"
-            android:padding="24dp"
-            android:background="@color/white">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="90dp"
-                android:layout_marginBottom="16dp"
-                android:text="@string/escribe_algo_te"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/editText"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:background="@drawable/rounded_edittext"
-                android:gravity="top|start"
-                android:hint="@string/aqu_tu_texto_te"
-                android:padding="16dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black" />
-
-            <Button
-                android:id="@+id/btnCheck"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="#3F51B5"
-                android:text="@string/confirmar_te"
-                android:textColor="#FFFFFF" />
-
-            <ScrollView
-                android:layout_width="353dp"
-                android:layout_height="207dp"
-                android:contentDescription="@string/scrolltraductor_text"
-                android:layout_marginTop="16dp">
-
-                <LinearLayout
-                    android:id="@+id/contenedorFilas"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical" />
-            </ScrollView>
-
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-    <!-- Imagen sobrepuesta -->
-    <ImageView
-        android:id="@+id/topImage"
-        android:layout_width="155dp"
-        android:layout_height="109dp"
-        android:layout_marginTop="8dp"
-        android:elevation="10dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/vista2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationT"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- CardView con contenido -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardContainer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="4dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="24dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="16dp"
+                            android:gravity="center"
+                            android:text="@string/escribe_algo_te"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/editText"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/rounded_edittext"
+                            android:gravity="top|start"
+                            android:hint="@string/aqu_tu_texto_te"
+                            android:padding="16dp"
+                            android:textColor="@color/black" />
+
+                        <Button
+                            android:id="@+id/btnCheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:backgroundTint="#3F51B5"
+                            android:text="@string/confirmar_te"
+                            android:textColor="#FFFFFF" />
+
+                        <!-- Resultado scrollable si crece -->
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp">
+
+                            <LinearLayout
+                                android:id="@+id/contenedorFilas"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" />
+                        </ScrollView>
+                    </LinearLayout>
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Imagen decorativa arriba izquierda -->
+            <ImageView
+                android:id="@+id/topImage"
+                android:layout_width="120dp"
+                android:layout_height="90dp"
+                android:elevation="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/vista2"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <!-- BottomNavigationView fijo al fondo -->
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationT"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
         android:background="#563ec8"
+        android:contentDescription="@string/txt_traductor"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
         app:menu="@menu/menu_traductor"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

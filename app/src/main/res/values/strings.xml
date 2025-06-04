@@ -40,8 +40,10 @@
     <string name="video_txt_description1">Aprende el lenguaje de señas, con este sencillo video.</string>
     <string name="video_txt_description4">Vocabulario básico de Cortesía en Lengua de Señas Costarricense</string>
     <string name="video_txt_description5">Join us for French in February! All month long we\'ll be brushing up on our French vocabulary through sign language [LSF]!</string>
+
     <string name="iniciar_sesi_n">Iniciar Sesión</string>
     <string name="registrarse_txt">Registrarse</string>
+
     <string name="bienvenido_a_tu_perfil">Bienvenido a tu perfil</string>
     <string name="nombre_perfil">Nombre:</string>
     <string name="nombre_del_usuario_txt">Nombre del usuario</string>
@@ -50,16 +52,19 @@
     <string name="niveles_completados_txt">Niveles completados</string>
     <string name="cerrar_sesi_n">Cerrar Sesión</string>
     <string name="bot_n_para_cerrar_sesi_n">Botón para cerrar sesión</string>
+
     <string name="candado_indicando_progreso_txt">Candado indicando progreso</string>
     <string name="contenedor_de_informaci_n_de_perfil_des">Contenedor de información de perfil</string>
     <string name="imagen_de_perfil_des">Imagen de perfil</string>
     <string name="n_meros">Números</string>
     <string name="puntos_txt">......</string>
+
     <string name="registrate_login">Registrate</string>
     <string name="iniciar_sesi_n_login">Iniciar Sesión</string>
     <string name="correo_electr_nico_login">Correo electrónico</string>
     <string name="contrase_a_login">Contraseña:</string>
     <string name="correo_login">Correo:</string>
+
     <string name="abecedario_txt">Abecedario</string>
     <string name="lista_de_letras_del_abeced">Lista de letras del abecedario</string>
     <string name="retroceder_abece">Retroceder</string>
@@ -76,6 +81,8 @@
     <string name="confirmar_te">Confirmar</string>
     <string name="escribe_algo_te">Escribe Algo:</string>
     <string name="aqu_tu_texto_te">Aquí tu texto</string>
+
+
     <string name="rea_de_documentos_docu">Área de Documentos</string>
     <string name="documentos_docu">Documentos</string>
     <string name="did_ctica_de_la_lengua_de_se_as_argentina_docu">DIDÁCTICA DE LA LENGUA DE SEÑAS ARGENTINA</string>
