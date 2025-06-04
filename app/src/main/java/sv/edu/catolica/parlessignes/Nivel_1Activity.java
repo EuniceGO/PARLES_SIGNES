@@ -39,6 +39,7 @@ public class Nivel_1Activity extends AppCompatActivity {
 
     private String opcionSeleccionada = "";
     private String respuestaCorrecta = "";
+    private int intentos = 0;
 
 
     @Override
@@ -213,16 +214,21 @@ public class Nivel_1Activity extends AppCompatActivity {
 
                     if (esCorrecta) {
                         Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
+                        fraseIndex++;
+                        if (fraseIndex >= frases.size()) {
+                            verificarNivelCompletado();
+                        } else {
+                            mostrarFrase();
+                        }
                     } else {
-                        Toast.makeText(this, "Incorrecto.", Toast.LENGTH_SHORT).show();
-                    }
+                        intentos++;
 
-                    fraseIndex++;
-
-                    if (fraseIndex >= frases.size()) {
-                        verificarNivelCompletado();
-                    } else {
-                        mostrarFrase();
+                        if (intentos == 2) {
+                            Toast.makeText(this, "Has fallado 2 veces. Fin del intento.", Toast.LENGTH_LONG).show();
+                            finish();
+                        }else {
+                            Toast.makeText(this, "Incorrecto. Intenta de nuevo", Toast.LENGTH_SHORT).show();
+                        }
                     }
                 })
                 .addOnFailureListener(e -> {
