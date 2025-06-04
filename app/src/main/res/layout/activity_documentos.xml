@@ -52,7 +52,7 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
             android:padding="16dp">
 
 
@@ -69,12 +69,14 @@
                     android:layout_height="140dp"
                     android:orientation="vertical"
                     android:layout_marginTop="20dp"
-                    android:gravity="center_horizontal">
+                    android:gravity="center_horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:id="@+id/img_doc1"
                         android:layout_width="wrap_content"
                         android:layout_height="110dp"
+                        android:contentDescription="@string/txt_documentos"
                         app:srcCompat="@drawable/estudio_mounstruito"
                         android:layout_marginTop="10dp"/>
 
@@ -82,7 +84,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:text="@string/documentos_docu"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black"
+                        tools:ignore="TextSizeCheck" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -94,29 +97,30 @@
                     <TextView
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:text="@string/did_ctica_de_la_lengua_de_se_as_argentina_docu"
                         android:textColor="@color/black"
                         android:textSize="15sp"
-                        />
+                        tools:ignore="TextSizeCheck" />
 
                     <TextView
                         android:layout_width="132dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:text="@string/documento_de_aprendizaje_argentino_docu"
                         android:textColor="@color/black"
-                        android:textSize="10sp" />
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp,TextSizeCheck" />
 
                     <Button
                         android:id="@+id/btnView1"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="16dp"
-                        android:layout_marginLeft="20dp"
                         android:text="@string/ver_pdf_docu"
-                        />
+                        tools:ignore="DuplicateSpeakableTextCheck" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -131,19 +135,22 @@
                     android:layout_height="130dp"
                     android:orientation="vertical"
                     android:layout_marginTop="50dp"
-                    android:gravity="center_horizontal">
+                    android:gravity="center_horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:id="@+id/img_doc2"
                         android:layout_width="wrap_content"
                         android:layout_height="110dp"
+                        android:contentDescription="@string/txt_documentos"
                         app:srcCompat="@drawable/estudio_mounstruito" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:text="@string/documentos_docu"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black"
+                        tools:ignore="TextSizeCheck" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -155,19 +162,21 @@
                     <TextView
                         android:layout_width="173dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:text="@string/diccionario_b_sico_de_la_lengua_de_se_as_colombiana"
+                        android:textColor="@color/black"
                         android:textSize="15sp"
-                        android:textColor="@color/black"/>
+                        tools:ignore="TextSizeCheck" />
 
                     <TextView
                         android:layout_width="164dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:text="@string/diccionario_en_el_que_colombia"
+                        android:textColor="@color/black"
                         android:textSize="10sp"
-                        android:textColor="@color/black"/>
+                        tools:ignore="SmallSp,TextSizeCheck" />
 
                     <Button
                         android:id="@+id/btnView2"
@@ -191,19 +200,22 @@
                     android:layout_height="130dp"
                     android:orientation="vertical"
                     android:layout_marginTop="20dp"
-                    android:gravity="center_horizontal">
+                    android:gravity="center_horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:id="@+id/img_doc3"
                         android:layout_width="wrap_content"
                         android:layout_height="110dp"
+                        android:contentDescription="@string/txt_documentos"
                         app:srcCompat="@drawable/estudio_mounstruito" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:text="@string/documentos_docu"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black"
+                        tools:ignore="TextSizeCheck" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -217,24 +229,26 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:text="@string/diccionario_de_lenguaje_de_se_as_mexicano"
+                        android:textColor="@color/black"
                         android:textSize="15sp"
-                        android:textColor="@color/black"/>
+                        tools:ignore="TextSizeCheck" />
 
                     <TextView
                         android:layout_width="132dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:text="@string/diccionario_mexicano_lsm_para_aprendiza"
+                        android:textColor="@color/black"
                         android:textSize="10sp"
-                        android:textColor="@color/black"/>
+                        tools:ignore="SmallSp,TextSizeCheck" />
 
                     <Button
                         android:id="@+id/btnView3"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:text="@string/ver_pdf_docu"
                         />
                 </LinearLayout>
@@ -251,12 +265,14 @@
                     android:layout_height="130dp"
                     android:orientation="vertical"
                     android:layout_marginTop="20dp"
-                    android:gravity="center_horizontal">
+                    android:gravity="center_horizontal"
+                    tools:ignore="UseCompoundDrawables">
 
                     <ImageView
                         android:id="@+id/img_doc4"
                         android:layout_width="wrap_content"
                         android:layout_height="110dp"
+                        android:contentDescription="@string/txt_documentos"
                         app:srcCompat="@drawable/estudio_mounstruito" />
 
                     <TextView
@@ -283,18 +299,19 @@
                     <TextView
                         android:layout_width="132dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:text="@string/diccionario_biling_e_lenguaje_de_se_as_chilena"
                         android:textSize="10sp"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black"
+                        tools:ignore="SmallSp" />
 
                     <Button
                         android:id="@+id/btnView4"
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:text="@string/ver_pdf_docu"
                         />
                 </LinearLayout>

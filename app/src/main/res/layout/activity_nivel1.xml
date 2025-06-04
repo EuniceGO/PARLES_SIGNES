@@ -19,7 +19,8 @@
         android:background="@drawable/icon_cerrar"
         android:contentDescription="@string/btn_text_check"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardContainer"
@@ -132,6 +133,7 @@
         android:layout_width="155dp"
         android:layout_height="109dp"
         android:layout_marginTop="32dp"
+        android:contentDescription="@string/txt_nivel_1"
         android:elevation="10dp"
         android:scaleType="centerCrop"
         android:src="@drawable/vista"

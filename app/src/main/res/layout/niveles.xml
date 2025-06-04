@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
@@ -39,7 +40,7 @@
                     android:layout_height="100dp"
                     android:layout_marginStart="210dp"
                     android:layout_marginTop="85dp"
-                    android:contentDescription="Monstruo"
+                    android:contentDescription="@string/txt_monstruo_level"
                     android:src="@drawable/estudio_mounstruito"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -50,12 +51,13 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="120dp"
-                    android:text="Sección donde podrás aprender por medio de niveles"
+                    android:text="@string/txt_description_level"
                     android:textAlignment="center"
                     android:textColor="#444444"
                     android:textSize="16sp"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TextSizeCheck" />
 
                 <TextView
                     android:id="@+id/txtTitulo"
@@ -63,13 +65,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="48dp"
                     android:layout_marginTop="65dp"
-                    android:text="Bienvenido"
+                    android:text="@string/txt_bienvenido"
                     android:textAlignment="center"
-                    android:textColor="#000000"
+                    android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="TextSizeCheck" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -79,8 +82,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Niveles"
-            android:textColor="#000000"
+            android:text="@string/txt_niveles"
+            android:textColor="@color/black"
             android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.141"
@@ -110,6 +113,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="20dp"
+                    android:contentDescription="@string/txt_nivel_1"
                     app:srcCompat="@drawable/icons8_control" />
 
                 <TextView
@@ -118,7 +122,8 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="120dp"
-                    android:text="Nivel- 1" />
+                    android:text="@string/txt_nivel_1"
+                    tools:ignore="RelativeOverlap" />
 
                 <ImageView
                     android:id="@+id/img_candado1"
@@ -127,6 +132,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="100dp"
+                    android:contentDescription="@string/txt_nivel_1"
                     app:srcCompat="@drawable/candado_abierto" />
 
                 <ImageView
@@ -136,8 +142,10 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/txt_niveles"
                     android:onClick="ver_nivel1"
-                    app:srcCompat="@drawable/proximo" />
+                    app:srcCompat="@drawable/proximo"
+                    tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -156,7 +164,8 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:contentDescription="@string/txt_nivel_2">
 
                 <ImageView
                     android:id="@+id/icon_control2"
@@ -165,6 +174,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="20dp"
                     android:layout_centerVertical="true"
+                    android:contentDescription="@string/txt_nivel_2"
                     app:srcCompat="@drawable/icons8_control" />
 
                 <TextView
@@ -173,7 +183,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="120dp"
                     android:layout_centerVertical="true"
-                    android:text="Nivel-2" />
+                    android:text="@string/txt_nivel_2"
+                    tools:ignore="RelativeOverlap" />
 
                 <ImageView
                     android:id="@+id/img_candado2"
@@ -182,6 +193,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="100dp"
+                    android:importantForAccessibility="no"
                     app:srcCompat="@drawable/candado" />
 
                 <ImageView
@@ -192,10 +204,12 @@
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="10dp"
                     android:clickable="true"
+                    android:contentDescription="@string/txt_niveles"
                     android:enabled="true"
                     android:focusable="true"
                     android:onClick="ver_nivel2"
-                    app:srcCompat="@drawable/proximo" />
+                    app:srcCompat="@drawable/proximo"
+                    tools:ignore="TouchTargetSizeCheck" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -214,7 +228,8 @@
 
             <RelativeLayout
                 android:layout_width="314dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:contentDescription="@string/txt_nivel_3">
 
                 <ImageView
                     android:id="@+id/icon_control3"
@@ -222,6 +237,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="17dp"
+                    android:contentDescription="@string/txt_nivel_3"
                     app:srcCompat="@drawable/icons8_control" />
 
                 <TextView
@@ -230,7 +246,9 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="120dp"
-                    android:text="Nivel-3" />
+                    android:contentDescription="@string/txt_nivel_3"
+                    android:text="@string/txt_nivel_3"
+                    tools:ignore="RelativeOverlap" />
 
                 <ImageView
                     android:id="@+id/img_candado3"
@@ -239,6 +257,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="100dp"
+                    android:contentDescription="@string/txt_nivel_3"
                     app:srcCompat="@drawable/candado" />
 
                 <ImageView
@@ -248,8 +267,10 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/txt_niveles"
+                    android:onClick="ver_nivel3"
                     app:srcCompat="@drawable/proximo"
-                    android:onClick="ver_nivel3"/>
+                    tools:ignore="TouchTargetSizeCheck" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -259,6 +280,7 @@
             android:layout_width="317dp"
             android:layout_height="47dp"
             android:layout_marginTop="28dp"
+            android:contentDescription="@string/txt_nivel_4"
             app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="10dp"
             app:cardElevation="4dp"
@@ -268,7 +290,9 @@
 
             <RelativeLayout
                 android:layout_width="314dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:contentDescription="@string/txt_nivel_4"
+                android:importantForAccessibility="no">
 
                 <ImageView
                     android:id="@+id/icon_control4"
@@ -276,6 +300,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="17dp"
+                    android:importantForAccessibility="no"
                     app:srcCompat="@drawable/icons8_control" />
 
                 <TextView
@@ -284,7 +309,9 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="120dp"
-                    android:text="Nivel-4" />
+                    android:contentDescription="@string/txt_nivel_4"
+                    android:text="@string/txt_nivel_4"
+                    tools:ignore="RelativeOverlap" />
 
                 <ImageView
                     android:id="@+id/img_candado4"
@@ -293,6 +320,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="100dp"
+                    android:importantForAccessibility="no"
                     app:srcCompat="@drawable/candado" />
 
                 <ImageView
@@ -302,8 +330,10 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/txt_niveles"
+                    android:onClick="ver_nivel4"
                     app:srcCompat="@drawable/proximo"
-                    android:onClick="ver_nivel4"/>
+                    tools:ignore="TouchTargetSizeCheck" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
         <androidx.cardview.widget.CardView
@@ -311,6 +341,7 @@
             android:layout_width="317dp"
             android:layout_height="47dp"
             android:layout_marginTop="100dp"
+            android:contentDescription="@string/txt_nivel_5"
             app:cardBackgroundColor="#FFFFFF"
             app:cardCornerRadius="10dp"
             app:cardElevation="4dp"
@@ -320,7 +351,8 @@
 
             <RelativeLayout
                 android:layout_width="314dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:contentDescription="@string/txt_nivel_5">
 
                 <ImageView
                     android:id="@+id/icon_control5"
@@ -328,6 +360,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_marginStart="17dp"
+                    android:importantForAccessibility="no"
                     app:srcCompat="@drawable/icons8_control" />
 
                 <TextView
@@ -336,7 +369,9 @@
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="120dp"
-                    android:text="Nivel-5" />
+                    android:importantForAccessibility="no"
+                    android:text="@string/txt_nivel_5"
+                    tools:ignore="RelativeOverlap" />
 
                 <ImageView
                     android:id="@+id/img_candado5"
@@ -345,6 +380,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="100dp"
+                    android:importantForAccessibility="no"
                     app:srcCompat="@drawable/candado" />
 
                 <ImageView
@@ -354,8 +390,10 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/txt_niveles"
+                    android:onClick="ver_nivel5"
                     app:srcCompat="@drawable/proximo"
-                    android:onClick="ver_nivel5"/>
+                    tools:ignore="TouchTargetSizeCheck" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -370,5 +408,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:menu="@menu/bottom_nav_menu"
-        app:labelVisibilityMode="labeled"/>
+        app:labelVisibilityMode="labeled"
+        tools:ignore="VisualLintBottomNav" />
 </androidx.constraintlayout.widget.ConstraintLayout>

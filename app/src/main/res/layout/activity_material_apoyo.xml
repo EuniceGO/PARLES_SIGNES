@@ -64,7 +64,8 @@
                         android:layout_height="150dp"
                         android:contentDescription="@string/txt_documentos"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_document" />
+                        android:src="@drawable/ic_document"
+                        tools:ignore="ImageContrastCheck" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -98,7 +99,8 @@
                         android:layout_height="150dp"
                         android:contentDescription="@string/txt_videos"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_video" />
+                        android:src="@drawable/ic_video"
+                        tools:ignore="ImageContrastCheck" />
 
                     <TextView
                         android:layout_width="wrap_content"

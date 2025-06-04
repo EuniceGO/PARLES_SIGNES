@@ -24,7 +24,8 @@
         android:layout_marginEnd="-125dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="VisualLintOverlap" />
 
     <Button
         android:id="@+id/btn_regis"
@@ -54,7 +55,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/vista" />
+        app:srcCompat="@drawable/vista"
+        tools:ignore="VisualLintBounds" />
 
     <EditText
         android:id="@+id/correo_user"
@@ -101,11 +103,12 @@
         android:minHeight="48dp"
         android:padding="10dp"
         android:textColor="@color/black"
+        android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/correo_user"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
 
 
     <TextView
@@ -128,6 +131,7 @@
         android:layout_marginEnd="50dp"
         android:ems="10"
         android:hint="@string/txt_nombre"
+        android:importantForAutofill="no"
         android:inputType="text"
         android:minHeight="48dp"
         android:padding="10dp"
@@ -135,7 +139,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck" />
 
 
     <TextView

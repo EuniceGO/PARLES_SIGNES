@@ -25,6 +25,21 @@
     <string name="txt_videos">Videos</string>
     <string name="txt_documentos">Documentos</string>
     <string name="txt_abecedario">Abecedario</string>
+    <string name="txt_nivel_1">Nivel- 1</string>
+    <string name="txt_nivel_2">Nivel-2</string>
+    <string name="txt_nivel_3">Nivel-3</string>
+    <string name="txt_nivel_4">Nivel-4</string>
+    <string name="txt_nivel_5">Nivel-5</string>
+    <string name="txt_description_level">Sección donde podrás aprender por medio de niveles</string>
+    <string name="txt_monstruo_level">Monstruo</string>
+    <string name="txt_level_cerrar">Cerrar</string>
+    <string name="txt_level_excelente_lo_lograste">Excelente lo lograste</string>
+    <string name="txt_level_has_completado_todos_los_niveles">Has completado todos los niveles</string>
+    <string name="txt_level_felicidades">Felicidades sigue practicando más!</string>
+    <string name="txt_level_continuar">Continuar</string>
+    <string name="txt_level_puedes_pasar_al_siguiente_nivel">Puedes pasar al siguiente nivel !</string>
+    <string name="txt_level_imagen_de_contenido">Imagen de contenido</string>
+    <string name="txt_level_nivel_desbloqueado">Nivel desbloqueado</string>
 
     <string name="menu_perfil">Perfil</string>
     <string name="menu_traductor">Traductor</string>
@@ -75,6 +90,7 @@
     <string name="sigue_aprendiendo_cate">Sigue aprendiendo</string>
     <string name="bienvenido_a_la_secci_n_de_categorias">Bienvenido a la sección de categorias</string>
     <string name="abecedario_categ">Abecedario</string>
+    <string name="saludos">Saludos</string>
     <string name="n_meros_categ">Números</string>
     <string name="animales_categ">Animales</string>
     <string name="scrolltraductor_text">scrollTraductor</string>
@@ -88,11 +104,15 @@
     <string name="did_ctica_de_la_lengua_de_se_as_argentina_docu">DIDÁCTICA DE LA LENGUA DE SEÑAS ARGENTINA</string>
     <string name="documento_de_aprendizaje_argentino_docu">Documento de aprendizaje argentino</string>
     <string name="ver_pdf_docu">Ver PDF</string>
+
     <string name="diccionario_b_sico_de_la_lengua_de_se_as_colombiana">DICCIONARIO BÁSICO DE LA LENGUA DE SEÑAS COLOMBIANA</string>
     <string name="diccionario_en_el_que_colombia">Diccionario en el que podras informarte mucho más sobre el lenguaje de señas en Colombia</string>
     <string name="diccionario_de_lenguaje_de_se_as_mexicano">DICCIONARIO DE LENGUAJE DE SEÑAS MEXICANO</string>
     <string name="diccionario_mexicano_lsm_para_aprendiza">Diccionario mexicano LSM para aprendizaje y lectura</string>
     <string name="lenguaje_de_se_as_chile">LENGUAJE DE SEÑAS CHILE</string>
     <string name="diccionario_biling_e_lenguaje_de_se_as_chilena">Diccionario bilingüe - Lenguaje de Señas Chilena</string>
+
+
+
 
 </resources>
