@@ -15,7 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class InicioActivity extends AppCompatActivity {
 
-    Button btnNiveles,btnCategorias;
+    Button btnNiveles,btnCategorias,btnNosotros;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +30,7 @@ public class InicioActivity extends AppCompatActivity {
 
         btnNiveles = findViewById(R.id.btn_ver_niveles);
         btnCategorias = findViewById(R.id.btn_ver_categoria);
+        btnNosotros= findViewById(R.id.btnNosotros);
 
         findViewById(R.id.btn_verMaterial).setOnClickListener(v -> {
             Intent intent = new Intent(this, MaterialApoyoActivity.class);
@@ -46,7 +47,10 @@ public class InicioActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-
+        findViewById(R.id.btnNosotros).setOnClickListener(v -> {
+            Intent intent = new Intent(this, SobreNosotrosActivity.class);
+            startActivity(intent);
+        });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigation);
         bottomNavigationView.setOnItemSelectedListener(item -> {
@@ -94,5 +98,10 @@ public class InicioActivity extends AppCompatActivity {
     public void vistaInicio(MenuItem item) {
         startActivity(new Intent(this, InicioActivity.class));
         finish();
+    }
+    public void vistaNosotros(MenuItem item) {
+        startActivity(new Intent(this, SobreNosotrosActivity.class));
+        finish();
+
     }
 }

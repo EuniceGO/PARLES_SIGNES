@@ -107,7 +107,8 @@
                             android:backgroundTint="#E0E0FF"
                             android:text="@string/btn_nosotros"
                             android:textColor="#616161"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            android:onClick="vistaNosotros"/>
                     </LinearLayout>
 
                     <!-- Lecciones -->
@@ -119,8 +120,8 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:layout_width="71dp"
-                            android:layout_height="59dp"
+                            android:layout_width="93dp"
+                            android:layout_height="84dp"
                             android:layout_marginBottom="8dp"
                             android:contentDescription="@string/btn_lecciones"
                             android:src="@drawable/mounstruito2" />
@@ -133,6 +134,7 @@
                             android:text="@string/btn_lecciones"
                             android:textColor="#616161"
                             android:textSize="12sp"
+
                             tools:ignore="DuplicateSpeakableTextCheck" />
                     </LinearLayout>
                 </LinearLayout>

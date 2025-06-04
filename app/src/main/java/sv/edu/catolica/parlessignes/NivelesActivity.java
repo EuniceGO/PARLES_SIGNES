@@ -42,6 +42,10 @@ public class NivelesActivity extends AppCompatActivity {
         img_candado5 = findViewById(R.id.img_candado5);
 
 
+        btnNivel2.setEnabled(false);
+        btnNivel3.setEnabled(false);
+        btnNivel4.setEnabled(false);
+        btnNivel5.setEnabled(false);
 
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         FirebaseAuth auth = FirebaseAuth.getInstance();
