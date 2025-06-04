@@ -78,6 +78,12 @@
         <activity
             android:name=".AbecedarioActivity"
             android:screenOrientation="fullSensor"/>
+        <activity
+            android:name=".NumerosActivity"
+            android:screenOrientation="fullSensor"/>
+        <activity android:name=".AnimalesActivity"
+            android:screenOrientation="fullSensor"/>
+
     </application>
 
 </manifest>

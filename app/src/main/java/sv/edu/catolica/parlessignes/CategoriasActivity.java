@@ -23,6 +23,19 @@ public class CategoriasActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Button btnNumeros = findViewById(R.id.btn_categoria);
+        btnNumeros.setOnClickListener(v -> {
+            Intent intent = new Intent(CategoriasActivity.this, NumerosActivity.class);
+            startActivity(intent);
+        });
+        Button btnAnimales = findViewById(R.id.btn_animales);
+        btnAnimales.setOnClickListener(v -> {
+            startActivity(new Intent(CategoriasActivity.this, AnimalesActivity.class));
+        });
+        Button btnAbecedario = findViewById(R.id.btn_abecedario);
+        btnAbecedario.setOnClickListener(v -> {
+            startActivity(new Intent(CategoriasActivity.this, AbecedarioActivity.class));
+        });
 
     }
 

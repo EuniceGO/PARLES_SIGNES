@@ -130,16 +130,16 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btn_comidas"
+                android:id="@+id/btn_abecedario"
                 android:layout_width="match_parent"
                 android:layout_height="121dp"
                 android:layout_margin="10dp"
                 android:background="@drawable/btn_square"
-                android:drawableTop="@drawable/comida_icon"
+                android:drawableTop="@drawable/categoria_icon"
                 android:drawablePadding="4dp"
                 android:gravity="center"
                 android:paddingTop="8dp"
-                android:text="Comidas"
+                android:text="Abecedario"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>
@@ -176,7 +176,7 @@
                 android:drawablePadding="4dp"
                 android:gravity="center"
                 android:paddingTop="8dp"
-                android:text="@string/txt_categorias"
+                android:text="Números"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>
@@ -198,7 +198,7 @@
                 android:drawablePadding="4dp"
                 android:gravity="center"
                 android:paddingTop="8dp"
-                android:text="@string/txt_categorias"
+                android:text="Animales"
                 android:textColor="@color/white"
                 android:textSize="15sp" />
         </LinearLayout>
