@@ -90,7 +90,7 @@
     <string name="sigue_aprendiendo_cate">Sigue aprendiendo</string>
     <string name="bienvenido_a_la_secci_n_de_categorias">Bienvenido a la sección de categorias</string>
     <string name="abecedario_categ">Abecedario</string>
-    <string name="saludos">Saludos</string>
+    <string name="saludos">Meses</string>
     <string name="n_meros_categ">Números</string>
     <string name="animales_categ">Animales</string>
     <string name="scrolltraductor_text">scrollTraductor</string>
@@ -111,8 +111,9 @@
     <string name="diccionario_mexicano_lsm_para_aprendiza">Diccionario mexicano LSM para aprendizaje y lectura</string>
     <string name="lenguaje_de_se_as_chile">LENGUAJE DE SEÑAS CHILE</string>
     <string name="diccionario_biling_e_lenguaje_de_se_as_chilena">Diccionario bilingüe - Lenguaje de Señas Chilena</string>
-
-
+    <string name="retrocederr_meses">Retrocederr</string>
+    <string name="meses_del_a_o_mes">Meses del año</string>
+    <string name="lista_de_meses_mes">Lista de meses</string>
 
 
 </resources>
