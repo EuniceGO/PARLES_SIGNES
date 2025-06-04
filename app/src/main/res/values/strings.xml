@@ -114,6 +114,9 @@
     <string name="retrocederr_meses">Retrocederr</string>
     <string name="meses_del_a_o_mes">Meses del año</string>
     <string name="lista_de_meses_mes">Lista de meses</string>
+    <string name="derechos_reservador">© 2025 Parles+Signes. Todos los derechos reservados.</string>
+    <string name="texto_derechos">Nuestra aplicación utiliza imágenes, docuementos y videos obtenidos de fuentes externas. Los derechos de autor pertenecen a sus respectivos creadores. Si alguna imagen infringe derechos, contáctanos para su revisión.</string>
+    <string name="texto_uno_derechos">Un proyecto comprometido con la inclusión, accesibilidad y equidad comunicativa. Nuestro objetivo principal es acercar la lengua de señas a todos, promoviendo el aprendizaje y el respeto por la diversidad lingüística de las personas sordas.</string>
 
 
 </resources>

@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/parles_signes_fondo"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/image1"
         android:layout_width="122dp"
         android:layout_height="186dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:contentDescription="@string/txt_traductor"
         android:rotation="90"
         android:scaleType="fitCenter"
         android:src="@drawable/vista2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/mainText"
         app:layout_constraintDimensionRatio="159:192"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintWidth_percent="0.4" />
 
     <TextView
@@ -34,109 +36,68 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@id/image1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image1" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/projectDescription"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:text="un proyecto comprometido con la inclusión, accesibilidad y equidad comunicativa. Nuestro objetivo principal es acercar la lengua de señas a todos, promoviendo el aprendizaje y el respeto por la diversidad lingüística de las personas sordas."
+        android:text="@string/texto_uno_derechos"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@id/mainText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/mainText" />
-
-    <TextView
-        android:id="@+id/titleCopyright"
-        android:layout_width="412dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="100dp"
-        android:text="Derechos de Autor"
-        android:textAlignment="center"
-
-        android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.515"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/projectDescription" />
+        tools:ignore="VisualLintLongText" />
 
-    <ScrollView
-        android:id="@+id/scrollCredits"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="236dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="88dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/projectDescription"
+        app:srcCompat="@drawable/parlersignesicon"
+        tools:ignore="ImageContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCredits"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="12dp"
-        android:fillViewport="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleCopyright">
+        app:layout_constraintEnd_toEndOf="parent">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/creditChileMexico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_derechos"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            tools:ignore="VisualLintLongText" />
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:orientation="vertical"
-            android:gravity="center">
-
-            <TextView
-                android:id="@+id/creditChileMexico"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Documento: MINEDUC Chile y INDISCAPACIDAD CDMX. Uso educativo."
-                android:textSize="10sp"
-                android:textAlignment="center"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/creditResumen"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Documento tomado de diccionarios oficiales de LSCh, LSC, LSM y ASL. Uso educativo sin fines de lucro."
-                android:textSize="10sp"
-                android:textAlignment="center"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/creditHandyHandout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Handy Handout #584: Lenguaje de Señas Americano, por Kevin Stuckey, M.Ed., CCC-SLP. Publicado por Super Duper® Publications. Disponible en www.handyhandouts.com. Uso educativo sin fines de lucro."
-                android:textSize="10sp"
-                android:textAlignment="center"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:id="@+id/creditResumenFinal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="diccionarios oficiales de LSCh (Chile), LSC (Colombia) y ASL (Handy Handout #584). Solo uso educativo y sin fines comerciales."
-                android:textSize="10sp"
-                android:textAlignment="center"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
-                android:text="© 2025 Parles+Signes. Todos los derechos reservados."
-                android:textSize="10sp"
-                android:textAlignment="center"
-                android:textColor="@color/black"/>
-
-        </LinearLayout>
-
-    </ScrollView>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/derechos_reservador"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
