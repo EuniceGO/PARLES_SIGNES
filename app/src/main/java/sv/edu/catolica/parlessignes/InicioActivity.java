@@ -3,6 +3,7 @@ package sv.edu.catolica.parlessignes;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -103,5 +104,10 @@ public class InicioActivity extends AppCompatActivity {
         startActivity(new Intent(this, SobreNosotrosActivity.class));
         finish();
 
+    }
+
+    public void ver_lecciones(View view) {
+        startActivity(new Intent(this, CategoriasActivity.class));
+        finish();
     }
 }
