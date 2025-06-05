@@ -117,6 +117,46 @@
     <string name="derechos_reservador">© 2025 Parles+Signes. Todos los derechos reservados.</string>
     <string name="texto_derechos" tools:ignore="Typos">Nuestra aplicación utiliza imágenes, docuementos y videos obtenidos de fuentes externas. Los derechos de autor pertenecen a sus respectivos creadores. Si alguna imagen infringe derechos, contáctanos para su revisión.</string>
     <string name="texto_uno_derechos">Un proyecto comprometido con la inclusión, accesibilidad y equidad comunicativa. Nuestro objetivo principal es acercar la lengua de señas a todos, promoviendo el aprendizaje y el respeto por la diversidad lingüística de las personas sordas.</string>
+    <string name="rana">Rana</string>
+    <string name="p_jaro">Pájaro</string>
+    <string name="le_n">León</string>
+    <string name="lobo">Lobo</string>
+    <string name="oso">Oso</string>
+    <string name="gato_te">Gato</string>
+    <string name="b_ho_">Búho</string>
+    <string name="burro_t">Burro</string>
+    <string name="caballo_t">Caballo</string>
+    <string name="enero">Enero</string>
+    <string name="febrero">Febrero</string>
+    <string name="marzo">Marzo</string>
+    <string name="abril">Abril</string>
+    <string name="mayo">Mayo</string>
+    <string name="junio">Junio</string>
+    <string name="julio">Julio</string>
+    <string name="agosto">Agosto</string>
+    <string name="septiembre">Septiembre</string>
+    <string name="octubre">Octubre</string>
+    <string name="noviembre">Noviembre</string>
+    <string name="diciembre">Diciembre</string>
+    <string name="mensaje_registro">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="correo_v_registro">Por favor, ingrese un correo válido</string>
+    <string name="complete_registro">Por favor, complete todos los campos</string>
+    <string name="usuario_registrado_correctamente">Usuario registrado correctamente</string>
+    <string name="por_favor_complete_todos_los_campos">Por favor, complete todos los campos</string>
+    <string name="inicio_de_sesi_n_exitoso">Inicio de sesión exitoso</string>
+    <string name="usuario_o_contrase_a_incorrectos">Usuario o contraseña incorrectos</string>
+    <string name="inicio_me">Inicio</string>
+    <string name="traductor_voz_me">Traductor Voz</string>
+    <string name="traductor_escrito_me">Traductor Escrito</string>
+    <string name="no_hay_frases_para_este_nivel">No hay frases para este nivel.</string>
+    <string name="selecciona_la_opci_n_correcta">Selecciona la opción correcta</string>
+    <string name="selecciona_una_opci_n">Selecciona una opción</string>
+    <string name="has_fallado">Has fallado 2 veces. Fin del intento.</string>
+    <string name="incorrecto_">Incorrecto. Intenta de nuevo</string>
+    <string name="nivel_completado">¡Nivel completado!</string>
+    <string name="vuelve_a_intentar">Vuelve a intentar el nivel 1 .</string>
+    <string name="rat_n">Ratón</string>
+    <string name="correcto">¡Correcto!</string>
 
 
 </resources>

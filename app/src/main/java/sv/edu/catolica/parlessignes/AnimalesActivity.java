@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import java.util.ArrayList;
+import java.util.List;
+
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,20 +18,7 @@ public class AnimalesActivity extends AppCompatActivity {
 
     private LinearLayout letrasContainer;
     private int filaCount = 0;
-
-
-    private final String[][] animales = {
-            {"raton", "Ratón"},
-            {"rana", "Rana"},
-            {"pajaro", "Pájaro"},
-            {"leon", "León"},
-            {"lobo", "Lobo"},
-            {"oso", "Oso"},
-            {"gato", "Gato"},
-            {"buho", "Búho"},
-            {"burro", "Burro"},
-            {"caballo", "Caballo"}
-    };
+    private List<String[]> animales = new ArrayList<>();
 
 
     @Override
@@ -38,6 +28,17 @@ public class AnimalesActivity extends AppCompatActivity {
         setContentView(R.layout.animales);
 
         letrasContainer = findViewById(R.id.letrasContainer);
+
+        animales.add(new String[]{"raton", getString(R.string.rat_n)});
+        animales.add(new String[]{"rana", getString(R.string.rana)});
+        animales.add(new String[]{"pajaro", getString(R.string.p_jaro)});
+        animales.add(new String[]{"leon", getString(R.string.le_n)});
+        animales.add(new String[]{"lobo", getString(R.string.lobo)});
+        animales.add(new String[]{"oso", getString(R.string.oso)});
+        animales.add(new String[]{"gato", getString(R.string.gato_te)});
+        animales.add(new String[]{"buho", getString(R.string.b_ho_)});
+        animales.add(new String[]{"burro", getString(R.string.burro_t)});
+        animales.add(new String[]{"caballo", getString(R.string.caballo_t)});
         for (String[] animal : animales) {
             agregarAnimal(animal[0], animal[1]);
         }

@@ -51,7 +51,7 @@ public class LoginActivity extends AppCompatActivity {
         String password = contra.getText().toString().trim();
 
         if (email.isEmpty() || password.isEmpty()) {
-            Toast.makeText(this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.por_favor_complete_todos_los_campos, Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -59,12 +59,12 @@ public class LoginActivity extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
-                        Toast.makeText(LoginActivity.this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, R.string.inicio_de_sesi_n_exitoso, Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(LoginActivity.this, InicioActivity.class);
                         startActivity(intent);
                         finish();
                     } else {
-                        Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, R.string.usuario_o_contrase_a_incorrectos, Toast.LENGTH_SHORT).show();
                     }
                 });
     }

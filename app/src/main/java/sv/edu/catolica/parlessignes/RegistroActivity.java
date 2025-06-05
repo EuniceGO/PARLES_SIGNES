@@ -78,16 +78,16 @@ public class RegistroActivity extends AppCompatActivity {
                     crearUsuario(nombre, correo, contra);
 
                 } else {
-                    Toast.makeText(this, "La contraseña debe tener al menos 6 caracteres", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, R.string.mensaje_registro, Toast.LENGTH_SHORT).show();
 
                 }
             }
             else{
-                Toast.makeText(this, "Por favor, ingrese un correo válido", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.correo_v_registro, Toast.LENGTH_SHORT).show();
             }
         }
         else{
-            Toast.makeText(this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.complete_registro, Toast.LENGTH_SHORT).show();
 
         }
     }
@@ -109,7 +109,7 @@ public class RegistroActivity extends AppCompatActivity {
                                 agregarFrasesEjemplo(id);
                                 Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
                                 startActivity(intent);
-                                Toast.makeText(RegistroActivity.this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(RegistroActivity.this, R.string.usuario_registrado_correctamente, Toast.LENGTH_SHORT).show();
                                 finish();
                             } else {
                                 if (task.getException() != null) {

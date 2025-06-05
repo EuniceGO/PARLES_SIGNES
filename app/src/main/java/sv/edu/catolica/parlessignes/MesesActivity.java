@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import java.util.ArrayList;
+import java.util.List;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,22 +17,7 @@ public class MesesActivity extends AppCompatActivity {
 
     private LinearLayout letrasContainer;
     private int filaCount = 0;
-
-    // Meses con y sin tilde (mostrar / recurso)
-    private final String[][] meses = {
-            {"enero", "Enero"},
-            {"febrero", "Febrero"},
-            {"marzo", "Marzo"},
-            {"abril", "Abril"},
-            {"mayo", "Mayo"},
-            {"junio", "Junio"},
-            {"julio", "Julio"},
-            {"agosto", "Agosto"},
-            {"septiembre", "Septiembre"},
-            {"octubre", "Octubre"},
-            {"noviembre", "Noviembre"},
-            {"diciembre", "Diciembre"}
-    };
+    private final List<String[]> listaMeses = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +26,20 @@ public class MesesActivity extends AppCompatActivity {
         setContentView(R.layout.meses);
 
         letrasContainer = findViewById(R.id.letrasContainer);
+        listaMeses.add(new String[]{"enero", getString(R.string.enero)});
+        listaMeses.add(new String[]{"febrero", getString(R.string.febrero)});
+        listaMeses.add(new String[]{"marzo", getString(R.string.marzo)});
+        listaMeses.add(new String[]{"abril", getString(R.string.abril)});
+        listaMeses.add(new String[]{"mayo", getString(R.string.mayo)});
+        listaMeses.add(new String[]{"junio", getString(R.string.junio)});
+        listaMeses.add(new String[]{"julio", getString(R.string.julio)});
+        listaMeses.add(new String[]{"agosto", getString(R.string.agosto)});
+        listaMeses.add(new String[]{"septiembre", getString(R.string.septiembre)});
+        listaMeses.add(new String[]{"octubre", getString(R.string.octubre)});
+        listaMeses.add(new String[]{"noviembre", getString(R.string.noviembre)});
+        listaMeses.add(new String[]{"diciembre", getString(R.string.diciembre)});
 
-        for (String[] mes : meses) {
+        for (String[] mes : listaMeses) {
             agregarMes(mes[0], mes[1]);
         }
     }

@@ -2,18 +2,18 @@
     <item
         android:id="@+id/nav_inicio"
         android:icon="@drawable/casa"
-        android:title="Inicio"
+        android:title="@string/inicio_me"
         android:onClick="vistaInicioV"/>
 
     <item
         android:id="@+id/nav_voz"
         android:icon="@drawable/micro"
-        android:title="Trad. Voz"
+        android:title="@string/traductor_voz_me"
         android:onClick="vistaTraductorV"/>
 
     <item
         android:id="@+id/nav_escrito"
         android:icon="@drawable/icon_mensaje"
-        android:title="Trad. Escrito"
+        android:title="@string/traductor_escrito_me"
         android:onClick="vistaTraductor_Escrito"/>
 </menu>

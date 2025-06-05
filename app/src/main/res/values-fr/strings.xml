@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">PARLES+SIGNES</string>
+
+<string name="descripcion_app">Une application conçue pour faciliter la communication inclusive entre les personnes entendantes et les personnes sourdes ou avec des difficultés d élocution.</string>
+<string name="parrafo_bienvenida">Un outil qui vous aidera à communiquer avec les personnes sourdes</string>
+<string name="inicio_sesion_registro">Se connecter</string>
+<string name="Error_traductor">La reconnaissance vocale n est pas disponible.</string>
+
+<string name="boton_iniciar">Démarrer</string>
+<string name="btn_nosotros">À propos de nous</string>
+<string name="btn_lecciones">Leçons</string>
+<string name="btn_text_check">Vérifier</string>
+
+<string name="txt_seccion_frase">Tapez quelque chose</string>
+<string name="txt_bienvenido">Bienvenue</string>
+<string name="txt_nosotros">Apprenez la langue des signes de manière amusante et facile</string>
+<string name="txt_secciones">Sections</string>
+<string name="txt_material">Matériel de support</string>
+<string name="txt_categorias">Catégories</string>
+<string name="txt_niveles">Niveaux</string>
+<string name="txt_traductor">Traducteur</string>
+<string name="txt_contrasena">Mot de passe :</string>
+<string name="txt_nombre">Nom :</string>
+<string name="txt_correo">Email :</string>
+<string name="txt_videos">Vidéos</string>
+<string name="txt_documentos">Documents</string>
+<string name="txt_abecedario">Alphabet</string>
+<string name="txt_nivel_1">Niveau- 1</string>
+<string name="txt_nivel_2">Niveau-2</string>
+<string name="txt_nivel_3">Niveau-3</string>
+<string name="txt_nivel_4">Niveau-4</string>
+<string name="txt_nivel_5">Niveau-5</string>
+<string name="txt_description_level">Section où vous pouvez apprendre par niveaux</string>
+<string name="txt_monstruo_level">Monstre</string>
+<string name="txt_level_cerrar">Fermer</string>
+<string name="txt_level_excelente_lo_lograste">Excellent, vous avez réussi</string>
+<string name="txt_level_has_completado_todos_los_niveles">Vous avez terminé tous les niveaux</string>
+<string name="txt_level_felicidades">Félicitations, continuez à pratiquer !</string>
+<string name="txt_level_continuar">Continuer</string>
+<string name="txt_level_puedes_pasar_al_siguiente_nivel">Vous pouvez passer au niveau suivant !</string>
+<string name="txt_level_imagen_de_contenido">Image du contenu</string>
+<string name="txt_level_nivel_desbloqueado">Niveau débloqué</string>
+
+<string name="menu_perfil">Profil</string>
+<string name="menu_traductor">Traducteur</string>
+<string name="menu_material">Matériel</string>
+<string name="menu_inicio">Accueil</string>
+
+<string name="video_txt_titulo3">LANGUE DES SIGNES</string>
+<string name="video_txt_titulo1">Alphabet en signes</string>
+<string name="video_txt_titulo4">Communication de base en Langue des Signes (LESCO)</string>
+<string name="video_txt_titulo5">Langue des Signes Française "LSF" Signes de base</string>
+<string name="video_txt_description3">Langue des signes américaine ASL pour débutants</string>
+<string name="video_txt_description2">LSM Salutations et adieux.</string>
+<string name="video_txt_description1">Apprenez la langue des signes avec cette vidéo simple.</string>
+<string name="video_txt_description4">Vocabulaire de base de politesse en Langue des Signes Costaricienne</string>
+<string name="video_txt_description5">Rejoignez-nous pour le français en février ! Tout le mois, nous réviserons notre vocabulaire français à travers la langue des signes [LSF] !</string>
+
+<string name="iniciar_sesi_n">Se connecter</string>
+<string name="registrarse_txt">S inscrire</string>
+
+<string name="bienvenido_a_tu_perfil">Bienvenue sur votre profil</string>
+<string name="nombre_perfil">Nom :</string>
+<string name="nombre_del_usuario_txt">Nom d utilisateur</string>
+<string name="correo_perfil">Email :</string>
+<string name="correo_del_usuario_txt">Email de l utilisateur</string>
+<string name="niveles_completados_txt">Niveaux terminés</string>
+<string name="cerrar_sesi_n">Déconnexion</string>
+<string name="bot_n_para_cerrar_sesi_n">Bouton pour se déconnecter</string>
+
+<string name="candado_indicando_progreso_txt">Cadenas indiquant la progression</string>
+<string name="contenedor_de_informaci_n_de_perfil_des">Conteneur d informations du profil</string>
+<string name="imagen_de_perfil_des">Image de profil</string>
+<string name="n_meros">Nombres</string>
+<string name="puntos_txt">......</string>
+
+<string name="registrate_login">Inscrivez-vous</string>
+<string name="iniciar_sesi_n_login">Se connecter</string>
+<string name="correo_electr_nico_login">Email</string>
+<string name="contrase_a_login">Mot de passe :</string>
+<string name="correo_login">Email :</string>
+
+<string name="abecedario_txt">Alphabet</string>
+<string name="lista_de_letras_del_abeced">Liste des lettres de l alphabet</string>
+<string name="retroceder_abece">Reculer</string>
+<string name="numeros_mostrados_num">nombres affichés</string>
+<string name="animales_titulo">Animaux</string>
+<string name="lista_de_animales_ani">Liste des animaux</string>
+<string name="hola_categ">Bonjour !</string>
+<string name="sigue_aprendiendo_cate">Continuez à apprendre</string>
+<string name="bienvenido_a_la_secci_n_de_categorias">Bienvenue dans la section catégories</string>
+<string name="abecedario_categ">Alphabet</string>
+<string name="saludos">Mois</string>
+<string name="n_meros_categ">Nombres</string>
+<string name="animales_categ">Animaux</string>
+<string name="scrolltraductor_text">scrollTraducteur</string>
+<string name="confirmar_te">Confirmer</string>
+<string name="escribe_algo_te">Écrivez quelque chose :</string>
+<string name="aqu_tu_texto_te">Votre texte ici</string>
+
+<string name="rea_de_documentos_docu">Zone de documents</string>
+<string name="documentos_docu">Documents</string>
+<string name="did_ctica_de_la_lengua_de_se_as_argentina_docu">PÉDAGOGIE DE LA LANGUE DES SIGNES ARGENTINE</string>
+<string name="documento_de_aprendizaje_argentino_docu">Document d apprentissage argentin</string>
+<string name="ver_pdf_docu">Voir PDF</string>
+
+<string name="diccionario_b_sico_de_la_lengua_de_se_as_colombiana">DICTIONNAIRE DE BASE DE LA LANGUE DES SIGNES COLOMBIENNE</string>
+<string name="diccionario_en_el_que_colombia">Dictionnaire où vous pouvez en apprendre plus sur la langue des signes en Colombie</string>
+<string name="diccionario_de_lenguaje_de_se_as_mexicano">DICTIONNAIRE DE LA LANGUE DES SIGNES MEXICAINE</string>
+<string name="diccionario_mexicano_lsm_para_aprendiza">Dictionnaire mexicain LSM pour apprentissage et lecture</string>
+<string name="lenguaje_de_se_as_chile">LANGUE DES SIGNES DU CHILI</string>
+<string name="diccionario_biling_e_lenguaje_de_se_as_chilena">Dictionnaire bilingue - Langue des Signes Chilienne</string>
+<string name="retrocederr_meses">Reculer</string>
+<string name="meses_del_a_o_mes">Mois de l année</string>
+<string name="lista_de_meses_mes">Liste des mois</string>
+<string name="derechos_reservador">© 2025 Parles+Signes. Tous droits réservés.</string>
+<string name="texto_derechos">Notre application utilise des images, documents et vidéos provenant de sources externes. Les droits d auteur appartiennent à leurs créateurs respectifs. Si une image enfreint des droits, contactez-nous pour révision.</string>
+<string name="texto_uno_derechos">Un projet engagé pour l inclusion, l accessibilité et l équité communicative. Notre objectif principal est de rapprocher la langue des signes de tous, en promouvant l apprentissage et le respect de la diversité linguistique des personnes sourdes.</string>
+    <string name="rana">Grenouille</string>
+    <string name="p_jaro">Oiseau</string>
+    <string name="le_n">Lion</string>
+    <string name="lobo">Loup</string>
+    <string name="oso">Ours</string>
+    <string name="gato_te">Chat</string>
+    <string name="b_ho_">Hibou</string>
+    <string name="burro_t">Âne</string>
+    <string name="caballo_t">Cheval</string>
+    <string name="enero">Janvier</string>
+    <string name="febrero">Février</string>
+    <string name="marzo">Mars</string>
+    <string name="abril">Avril</string>
+    <string name="mayo">Mai</string>
+    <string name="junio">Juin</string>
+    <string name="julio">Juillet</string>
+    <string name="agosto">Août</string>
+    <string name="septiembre">Septembre</string>
+    <string name="octubre">Octobre</string>
+    <string name="noviembre">Novembre</string>
+    <string name="diciembre">Décembre</string>
+    <string name="mensaje_registro">Le mot de passe doit contenir au moins 6 caractères</string>
+    <string name="correo_v_registro">Veuillez entrer un e-mail valide</string>
+    <string name="complete_registro">Veuillez remplir tous les champs</string>
+    <string name="usuario_registrado_correctamente">Utilisateur enregistré avec succès</string>
+    <string name="por_favor_complete_todos_los_campos">Veuillez remplir tous les champs</string>
+    <string name="inicio_de_sesi_n_exitoso">Connexion réussie</string>
+    <string name="usuario_o_contrase_a_incorrectos">Nom d utilisateur ou mot de passe incorrect</string>
+    <string name="inicio_me">Accueil</string>
+    <string name="traductor_voz_me">Traducteur vocal</string>
+    <string name="traductor_escrito_me">Traducteur écrit</string>
+    <string name="no_hay_frases_para_este_nivel">Il n y a pas de phrases pour ce niveau.</string>
+    <string name="selecciona_la_opci_n_correcta">Sélectionnez la bonne option</string>
+    <string name="selecciona_una_opci_n">Sélectionnez une option</string>
+    <string name="has_fallado">Vous avez échoué 2 fois. Fin de la tentative.</string>
+    <string name="incorrecto_">Incorrect. Réessayez</string>
+    <string name="nivel_completado">Niveau terminé !</string>
+    <string name="vuelve_a_intentar">Réessayez le niveau 1.</string>
+    <string name="rat_n">Souris</string>
+    <string name="correcto">Correct!</string>
+</resources>
