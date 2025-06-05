@@ -123,7 +123,7 @@ public class Nivel_3Activity extends AppCompatActivity {
                     }
 
                     if (frasesTemporales.isEmpty()) {
-                        Toast.makeText(this, "No hay frases para este nivel.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, R.string.no_hay_frases_para_este_nivel, Toast.LENGTH_SHORT).show();
                         return;
                     }
 
@@ -170,7 +170,7 @@ public class Nivel_3Activity extends AppCompatActivity {
 
         Collections.shuffle(opciones);
 
-        txtFrase.setText("Selecciona la opción correcta");
+        txtFrase.setText(R.string.selecciona_la_opci_n_correcta);
         txtOpcion1.setText(opciones.get(0));
         txtOpcion2.setText(opciones.get(1));
         txtOpcion3.setText(opciones.get(2));
@@ -197,7 +197,7 @@ public class Nivel_3Activity extends AppCompatActivity {
 
     private void verificarRespuesta() {
         if (opcionSeleccionada.isEmpty()) {
-            Toast.makeText(this, "Selecciona una opción", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.selecciona_una_opci_n, Toast.LENGTH_SHORT).show();
             return;
         }
 
@@ -216,7 +216,7 @@ public class Nivel_3Activity extends AppCompatActivity {
                     frases.get(fraseIndex).put("respondido", esCorrecta);
 
                     if (esCorrecta) {
-                        Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, R.string.correcto, Toast.LENGTH_SHORT).show();
                         fraseIndex++;
                         if (fraseIndex >= frases.size()) {
                             verificarNivelCompletado();
@@ -227,10 +227,10 @@ public class Nivel_3Activity extends AppCompatActivity {
                         intentos++;
 
                         if (intentos == 2) {
-                            Toast.makeText(this, "Has fallado 2 veces. Fin del intento.", Toast.LENGTH_LONG).show();
+                            Toast.makeText(this,  R.string.has_fallado, Toast.LENGTH_LONG).show();
                             finish();
                         }else {
-                            Toast.makeText(this, "Incorrecto. Intenta de nuevo", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(this, R.string.incorrecto_, Toast.LENGTH_SHORT).show();
                         }
                     }
                 })
